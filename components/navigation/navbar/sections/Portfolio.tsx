@@ -31,7 +31,7 @@ export default function Portfolio() {
     ];
 
     return (
-        <div className="grid grid-cols-[repeat(2,1fr)] gap-6 p-6 overflow-y-auto">
+        <div className="grid grid-cols-[repeat(2,1fr)] gap-10 pr-72 p-6 overflow-y-auto">
           {portfolioItems.map((item, index) => (
             <PortfolioItem 
               key={index}

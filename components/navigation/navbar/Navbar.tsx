@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from 'react';
 import About from "@/components/navigation/navbar/sections/About";
@@ -9,21 +9,33 @@ import Contact from "@/components/navigation/navbar/sections/Contact";
 
 type NavbarProps = {
     setSection: (section: string) => void;
-}
+    setIsLoaded: (isLoaded: boolean) => void;
+};
 
 type MainContentProps = {
     section: string;
-}
+};
 
-const Navoptions = ({ setSection }: NavbarProps) => (
-  <nav className="flex justify-items-center items-center text-white pt-4 pb-4 ml-8">
-    <button className="" onClick={() => setSection('about')}>About</button>
-    <button className="ml-2" onClick={() => setSection('resume')}>Resume</button>
-    <button className="ml-2" onClick={() => setSection('portfolio')}>Portfolio</button>
-    <button className="ml-2" onClick={() => setSection('blog')}>Blog</button>
-    <button className="ml-2" onClick={() => setSection('contact')}>Contact</button>
-  </nav>
-);
+const NavOptions = ({ setSection, setIsLoaded }: NavbarProps) => {
+
+  const handleClick = (section: string) => {
+    setIsLoaded(false); // Trigger fade-out
+    setTimeout(() => {
+      setSection(section);
+      setIsLoaded(true); // Trigger fade-in
+    }, 400); // Duration of fade-out
+  };
+
+  return (
+    <nav className="flex justify-items-center items-center text-white pt-4 pb-4 ml-8">
+      <button onClick={() => handleClick('about')}>About</button>
+      <button className="ml-4" onClick={() => handleClick('resume')}>Resume</button>
+      <button className="ml-4" onClick={() => handleClick('portfolio')}>Portfolio</button>
+      <button className="ml-4" onClick={() => handleClick('blog')}>Blog</button>
+      <button className="ml-4" onClick={() => handleClick('contact')}>Contact</button>
+    </nav>
+  );
+};
 
 const MainContent = ({ section }: MainContentProps) => {
   switch (section) {
@@ -34,9 +46,9 @@ const MainContent = ({ section }: MainContentProps) => {
     case 'portfolio':
       return <Portfolio />;
     case 'blog':
-        return <Blog />
+      return <Blog />;
     case 'contact':
-        return <Contact />
+      return <Contact />;
     default:
       return null;
   }
@@ -44,11 +56,14 @@ const MainContent = ({ section }: MainContentProps) => {
 
 const Navbar = () => {
   const [section, setSection] = useState('about');
+  const [isLoaded, setIsLoaded] = useState(true);
 
   return (
-    <div className="grid grid-rows-[auto_1fr] w-full h-full">
-        <Navoptions setSection={setSection} />
+    <div className="flex flex-col h-full w-full">
+      <NavOptions setSection={setSection} setIsLoaded={setIsLoaded} />
+      <div className={`flex-grow transition-opacity duration-400 ease-in-out ${isLoaded ? "opacity-100" : "opacity-0"}`}>
         <MainContent section={section} />
+      </div>
     </div>
   );
 };

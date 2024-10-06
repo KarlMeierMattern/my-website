@@ -5,7 +5,7 @@ import { faObjectUngroup } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   return (
-    <div className="grid grid-rows-[auto_auto] m-8">
+    <div className="w-full h-full grid grid-rows-[auto_auto] pr-72 p-6">
         <div className="grid-rows-1 mb-4">
             <Card>About</Card>
         </div>
@@ -23,10 +23,10 @@ const About = () => {
                 <div className="grid-rows-1 grid-cols-2">
                     <Card>About</Card>
                 </div>
-                <div className="grid-rows-2 grid-cols-1">
+                <div className="grid-rows-2 grid-cols-1 pb-16">
                     <Card>About</Card>
                 </div>
-                <div className="grid-rows-2 grid-cols-2">
+                <div className="grid-rows-2 grid-cols-2 pb-16">
                     <Card>About</Card>
                 </div>
             </div>
