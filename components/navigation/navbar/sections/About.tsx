@@ -16,7 +16,7 @@ const About = () => {
                         <FontAwesomeIcon icon={faObjectUngroup} />
                         <div className="">
                             <h1>Web development</h1>
-                            <p>I love creating & building responsive web-apps ng responsive web-app</p>
+                            <p>I love creating & building responsive web-apps</p>
                         </div>
                     </Card>
                 </div>

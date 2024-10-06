@@ -7,7 +7,7 @@ type PortfolioProps = {
 }
 
 const PortfolioItem = ({ title, description }: PortfolioProps) => (
-    <div className="grid grid-rows-[2fr_auto_auto] gap-2">
+    <div className="grid grid-rows-[2fr_auto_auto] gap-2 w-[350px] h-[350px]">
       <Card>Portfolio</Card>
       <h3 className="text-lg font-semibold">{title}</h3>
       <p className="text-sm">{description}</p>
@@ -22,10 +22,16 @@ export default function Portfolio() {
         { title: "Project 4", description: "Description for Project 4" },
         { title: "Project 5", description: "Description for Project 5" },
         { title: "Project 6", description: "Description for Project 6" },
+        { title: "Project 7", description: "Description for Project 7" },
+        { title: "Project 8", description: "Description for Project 8" },
+        { title: "Project 8", description: "Description for Project 8" },
+        { title: "Project 8", description: "Description for Project 8" },
+        { title: "Project 8", description: "Description for Project 8" },
+        { title: "Project 8", description: "Description for Project 8" },
     ];
 
     return (
-        <div className="grid grid-cols-2 gap-6 p-6">
+        <div className="grid grid-cols-[repeat(2,1fr)] gap-6 p-6 overflow-y-auto">
           {portfolioItems.map((item, index) => (
             <PortfolioItem 
               key={index}
