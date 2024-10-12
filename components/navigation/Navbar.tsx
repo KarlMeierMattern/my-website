@@ -1,20 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import About from "@/components/navigation/navbar/sections/About";
-import Resume from "@/components/navigation/navbar/sections/Resume";
-import Portfolio from "@/components/navigation/navbar/sections/Portfolio";
-import Blog from "@/components/navigation/navbar/sections/Blog";
-import Contact from "@/components/navigation/navbar/sections/Contact";
-import Button from "@/components/navigation/navbar/Button";
+import Button from "@/components/navigation/Button";
 
 type NavbarProps = {
   setSection: (section: string) => void;
   setIsLoaded: (isLoaded: boolean) => void;
-};
-
-type MainContentProps = {
-  section: string;
 };
 
 const NavOptions = ({ setSection, setIsLoaded }: NavbarProps) => {
@@ -75,39 +66,10 @@ const NavOptions = ({ setSection, setIsLoaded }: NavbarProps) => {
   );
 };
 
-const MainContent = ({ section }: MainContentProps) => {
-  switch (section) {
-    case "about":
-      return <About />;
-    case "resume":
-      return <Resume />;
-    case "portfolio":
-      return <Portfolio />;
-    case "blog":
-      return <Blog />;
-    case "contact":
-      return <Contact />;
-    default:
-      return null;
-  }
-};
-
-const Navbar = () => {
-  const [section, setSection] = useState("about");
-  const [isLoaded, setIsLoaded] = useState(true);
-
+export default function Navbar({ setSection, setIsLoaded }: NavbarProps) {
   return (
     <div className="flex flex-col h-full w-full">
       <NavOptions setSection={setSection} setIsLoaded={setIsLoaded} />
-      <div
-        className={`flex-grow transition-opacity duration-400 ease-in-out ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <MainContent section={section} />
-      </div>
     </div>
   );
-};
-
-export default Navbar;
+}
