@@ -9,6 +9,10 @@ import Contact from "@/components/navigation/sections/Contact";
 
 type MainContentProps = {
   section: string;
+};
+
+type ContentProps = {
+  section: string;
   isLoaded: boolean;
 };
 
@@ -29,7 +33,7 @@ const MainContent = ({ section }: MainContentProps) => {
   }
 };
 
-export default function Content({ section, isLoaded }: MainContentProps) {
+export default function Content({ section, isLoaded }: ContentProps) {
   return (
     <div className="flex flex-col h-full w-full">
       <div

@@ -3,7 +3,7 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="pr-72 p-6">
+    <div className="mb-40">
       <Card>
         <article>
           <header>

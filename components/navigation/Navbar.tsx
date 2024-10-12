@@ -6,12 +6,15 @@ import Button from "@/components/navigation/Button";
 type NavbarProps = {
   setSection: (section: string) => void;
   setIsLoaded: (isLoaded: boolean) => void;
+  scrollToContent: React.RefObject<HTMLDivElement>; // Add the scrollToContent prop
 };
 
-const NavOptions = ({ setSection, setIsLoaded }: NavbarProps) => {
+const NavOptions = ({
+  setSection,
+  setIsLoaded,
+  scrollToContent,
+}: NavbarProps) => {
   const [selectedSection, setSelectedSection] = useState<string>("about");
-
-  // onclick, setSelected = true, className="... {setSelected && bg-white}"
 
   const handleClick = (section: string) => {
     setIsLoaded(false); // Trigger fade-out
@@ -19,6 +22,10 @@ const NavOptions = ({ setSection, setIsLoaded }: NavbarProps) => {
     setTimeout(() => {
       setSection(section);
       setIsLoaded(true); // Trigger fade-in
+      scrollToContent.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }, 400); // Duration of fade-out
   };
 
@@ -66,10 +73,18 @@ const NavOptions = ({ setSection, setIsLoaded }: NavbarProps) => {
   );
 };
 
-export default function Navbar({ setSection, setIsLoaded }: NavbarProps) {
+export default function Navbar({
+  setSection,
+  setIsLoaded,
+  scrollToContent,
+}: NavbarProps) {
   return (
-    <div className="flex flex-col h-full w-full">
-      <NavOptions setSection={setSection} setIsLoaded={setIsLoaded} />
+    <div className="flex flex-col w-full">
+      <NavOptions
+        setSection={setSection}
+        setIsLoaded={setIsLoaded}
+        scrollToContent={scrollToContent}
+      />
     </div>
   );
 }
