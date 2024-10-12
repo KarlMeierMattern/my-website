@@ -1,6 +1,6 @@
 import Image from "next/image";
-import profilePic from "@/app/public/images/profilePic.png"
-import Card from '@/components/card'
+import profilePic from "@/app/public/images/profilePic.png";
+import Card from "@/components/Card";
 
 export default function Sidebar() {
   return (
