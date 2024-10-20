@@ -1,10 +1,10 @@
 import React, { ReactNode } from "react";
 
-interface ButtonProps {
+type ButtonProps = {
   children: ReactNode;
   onClick: () => void;
   isSelected: boolean;
-}
+};
 
 export default function Button({ children, onClick, isSelected }: ButtonProps) {
   return (
