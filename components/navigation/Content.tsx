@@ -61,4 +61,4 @@ export default function Content({ section }: ContentProps) {
   );
 }
 
-<div>new div</div>;
+<h1>Test 2</h1>;
