@@ -18,9 +18,7 @@ type ResumeRowProps = {
 const ResumeCategory = ({ category }: ResumeCategoryProps) => {
   return (
     <tr>
-      <th className="p-6 text-4xl text-left" colSpan={2}>
-        {category}
-      </th>
+      <th colSpan={2}>{category}</th>
     </tr>
   );
 };
@@ -28,12 +26,10 @@ const ResumeCategory = ({ category }: ResumeCategoryProps) => {
 const ResumeRow = ({ item }: ResumeRowProps) => {
   return (
     <tr>
-      <td className="flex flex-col p-6">
-        <div className="flex justify-between">
-          <strong>{item.title}</strong>
-          <span className="text-right text-xs italic">{item.details}</span>
-        </div>
-        <p className="mt-2">{item.description}</p>
+      <td>{item.title}</td>
+      <td>
+        <p>{item.description}</p>
+        <p>{item.details}</p>
       </td>
     </tr>
   );
@@ -54,11 +50,8 @@ export default function Resume() {
   });
 
   return (
-    <div className="mt-40">
-      <div className="text-8xl italic pb-12">Resume</div>
-      <table>
-        <tbody>{rows}</tbody>
-      </table>
-    </div>
+    <table>
+      <tbody>{rows}</tbody>
+    </table>
   );
 }

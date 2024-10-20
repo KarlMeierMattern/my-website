@@ -12,7 +12,7 @@ export default function Navbar({ setSection, selectedSection }: NavbarProps) {
 
   return (
     <div className="flex flex-col w-full">
-      <nav className="flex justify-items-center items-center text-black p-2 ml-8 bg-gray-200 rounded-xl w-fit mx-auto mt-4">
+      <nav className="flex justify-items-center items-center text-black p-2 ml-8 bg-zinc-400 bg-opacity-40 backdrop-blur-sm rounded-xl w-fit mx-auto mt-4">
         {navbarOptions.map((option) => (
           <Button
             isSelected={selectedSection === option}

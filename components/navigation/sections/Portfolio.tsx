@@ -7,7 +7,7 @@ export default function Portfolio() {
   return (
     <div className="grid justify-center items-center mt-40">
       <div className="text-8xl italic pb-12">Portfolio</div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-8">
         {portfolioData.map((item, index) => (
           <div
             className={`transition-transform duration-500 ${

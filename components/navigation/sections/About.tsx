@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="grid justify-center items-center mt-40">
       <div className="text-8xl italic pb-12">About</div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-8">
         {profileInfo.map((profile, index) => (
           <div
             key={profile.title}
@@ -15,7 +15,7 @@ const About = () => {
             }`} // Conditional offset
           >
             <Card>
-              <p className="text-6xl">{profile.title}</p>
+              <p className="text-4xl">{profile.title}</p>
               <p className="text-2xl font-extralight mt-8 leading-10">
                 {profile.description}
               </p>

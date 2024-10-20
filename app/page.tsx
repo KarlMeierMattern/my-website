@@ -11,14 +11,14 @@ export default function Home() {
   const [section, setSection] = useState("");
 
   return (
-    <main className="bg-zinc-50 min-h-screen pb-96">
-      <div className="relative">
+    <main className="bg-zinc-50 min-h-screen">
+      <div className="">
         <Image
           className="w-screen h-screen object-cover"
           src={landscape}
           alt="Landscape picture"
         />
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
+        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-10">
           <Navbar setSection={setSection} selectedSection={section} />
         </div>
       </div>

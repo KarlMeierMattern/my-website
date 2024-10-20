@@ -34,6 +34,7 @@ export default function Content({ section }: ContentProps) {
         case "blog":
           blogRef.current?.scrollIntoView({ behavior: "smooth" });
           break;
+
         default:
           break;
       }
@@ -48,7 +49,7 @@ export default function Content({ section }: ContentProps) {
       <div ref={aboutRef}>
         <About />
       </div>
-      <div className="mt-12" ref={portfolioRef}>
+      <div ref={portfolioRef}>
         <Portfolio />
       </div>
       <div ref={resumeRef}>
@@ -60,5 +61,3 @@ export default function Content({ section }: ContentProps) {
     </div>
   );
 }
-
-<h1>Test 2</h1>;

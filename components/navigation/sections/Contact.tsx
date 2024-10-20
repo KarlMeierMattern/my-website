@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 
 type ContentProps = {
   section: string;
@@ -12,7 +12,7 @@ export default function Contact({ section, className }: ContentProps) {
     const scrollToSection = () => {
       switch (section) {
         case "contact":
-          contactRef.current?.scrollIntoView({ behavior: "smooth" });
+          contactRef.current?.scrollIntoView({ behavior: "smooth" }); // contactRef.current points to the div element
           break;
         default:
           break;
@@ -22,10 +22,15 @@ export default function Contact({ section, className }: ContentProps) {
   }, [section]);
 
   return (
-    <div ref={contactRef} className={`min-h-screen flex flex-col ${className}`}>
+    <div
+      ref={contactRef}
+      className={`col-span-3 min-h-screen flex flex-col ${className}`}
+    >
       <footer className="bg-zinc-100 py-12 mt-auto">
         <div className="container mx-auto px-4">
-          <p className="text-8xl text-zinc-600 mb-8">Get in Touch</p>
+          <p className="text-9xl text-zinc-600 mb-8">
+            tell me &apos;what&apos;s next...
+          </p>
           <p className="text-4xl text-zinc-400 mb-8">
             karlmeiermattern@gmail.com
           </p>
