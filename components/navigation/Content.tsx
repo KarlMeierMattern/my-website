@@ -5,53 +5,50 @@ import About from "@/components/navigation/sections/About";
 import Resume from "@/components/navigation/sections/Resume";
 import Portfolio from "@/components/navigation/sections/Portfolio";
 import Blog from "@/components/navigation/sections/Blog";
-import Contact from "@/components/navigation/sections/Contact";
 
 type ContentProps = {
   section: string;
 };
 
 export default function Content({ section }: ContentProps) {
+  // myRef is an object that has a single property called .current initially set to null
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const portfolioRef = useRef<HTMLDivElement | null>(null);
   const resumeRef = useRef<HTMLDivElement | null>(null);
   const blogRef = useRef<HTMLDivElement | null>(null);
-  const contactRef = useRef<HTMLDivElement | null>(null);
 
-  // Function to scroll to the selected section
-  const scrollToSection = () => {
-    switch (section) {
-      case "about":
-        aboutRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      case "portfolio":
-        portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      case "resume":
-        resumeRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      case "blog":
-        blogRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      case "contact":
-        contactRef.current?.scrollIntoView({ behavior: "smooth" });
-        break;
-      default:
-        break;
-    }
-  };
-
-  // Call scrollToSection when the component mounts
+  // .current holds a reference to the DOM element
+  // After the component mounts, myRef.current will point to the corresponding DOM element to which you’ve attached the ref
   useEffect(() => {
-    scrollToSection();
-  }, [section]);
+    const scrollToSection = () => {
+      switch (section) {
+        case "about":
+          aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+          break;
+        case "portfolio":
+          portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
+          break;
+        case "resume":
+          resumeRef.current?.scrollIntoView({ behavior: "smooth" });
+          break;
+        case "blog":
+          blogRef.current?.scrollIntoView({ behavior: "smooth" });
+          break;
+        default:
+          break;
+      }
+    };
 
+    scrollToSection();
+  }, [section]); // Only depend on section
+
+  // each ref will point to the corresponding DOM element
   return (
     <div className="flex flex-col h-full w-full">
       <div ref={aboutRef}>
         <About />
       </div>
-      <div ref={portfolioRef}>
+      <div className="mt-12" ref={portfolioRef}>
         <Portfolio />
       </div>
       <div ref={resumeRef}>
@@ -59,9 +56,6 @@ export default function Content({ section }: ContentProps) {
       </div>
       <div ref={blogRef}>
         <Blog />
-      </div>
-      <div ref={contactRef}>
-        <Contact />
       </div>
     </div>
   );

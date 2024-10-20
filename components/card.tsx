@@ -3,11 +3,14 @@ import { ReactNode } from "react";
 
 interface CardProps {
   children: ReactNode;
+  className?: string;
 }
 
-export default function Card({ children }: CardProps) {
+export default function Card({ children, className }: CardProps) {
   return (
-    <div className="flex items-center justify-center w-full h-full bg-zinc-200 rounded-3xl shadow-2xl shadow-black/50">
+    <div
+      className={`card flex flex-col items-start justify-center w-full bg-zinc-200 rounded-3xl shadow-2xl shadow-black/50 p-6 ${className}`}
+    >
       {children}
     </div>
   );

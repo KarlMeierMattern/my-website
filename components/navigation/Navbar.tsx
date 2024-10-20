@@ -8,7 +8,7 @@ type NavbarProps = {
 };
 
 export default function Navbar({ setSection, selectedSection }: NavbarProps) {
-  const navbarOptions = ["about", "resume", "portfolio", "blog", "contact"];
+  const navbarOptions = ["about", "portfolio", "resume", "blog", "contact"];
 
   return (
     <div className="flex flex-col w-full">

@@ -1,32 +1,40 @@
-import Card from "@/components/Card";
-import React from "react";
-import Image from "next/image";
-import profilePic from "@/app/public/images/profilePic.png";
+import React, { useEffect, useRef } from "react";
 
-const Contact = () => {
-  return (
-    <div className="w-full h-full p-6">
-      <Card>
-        <div className="flex flex-col w-full h-full space-y-4">
-          <div className="w-full aspect-square flex items-center relative justify-center">
-            <Image
-              className="rounded-3xl object-cover mt-16 mb-16 ml-auto mr-auto"
-              width={250}
-              height={250}
-              src={profilePic}
-              alt="Picture of the author"
-            />
-          </div>
-          <div className="p-4 space-y-2">
-            <div className="p-2 bg-gray-100 rounded">Email</div>
-            <div className="p-2 bg-gray-100 rounded">Phone</div>
-            <div className="p-2 bg-gray-100 rounded">Birthday</div>
-            <div className="p-2 bg-gray-100 rounded">Location</div>
-          </div>
-        </div>
-      </Card>
-    </div>
-  );
+type ContentProps = {
+  section: string;
+  className: string;
 };
 
-export default Contact;
+export default function Contact({ section, className }: ContentProps) {
+  const contactRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const scrollToSection = () => {
+      switch (section) {
+        case "contact":
+          contactRef.current?.scrollIntoView({ behavior: "smooth" });
+          break;
+        default:
+          break;
+      }
+    };
+    scrollToSection();
+  }, [section]);
+
+  return (
+    <div ref={contactRef} className={`min-h-screen flex flex-col ${className}`}>
+      <footer className="bg-zinc-100 py-12 mt-auto">
+        <div className="container mx-auto px-4">
+          <p className="text-8xl text-zinc-600 mb-8">Get in Touch</p>
+          <p className="text-4xl text-zinc-400 mb-8">
+            karlmeiermattern@gmail.com
+          </p>
+          <hr className="mt-24 border-gray-300" />
+          <p className="mt-8">
+            © {new Date().getFullYear()} Your Company. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}

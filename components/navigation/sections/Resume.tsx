@@ -3,12 +3,10 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="mb-40">
+    <div className="mt-40">
+      <div className="text-8xl italic mb-4 pt-4 pl-4">Resume</div>
       <Card>
         <article>
-          <header>
-            <h2 className="text-2xl font-bold mb-4 pt-4 pl-4">Resume</h2>
-          </header>
           <section className="mb-8">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-2 h-2 flex justify-center items-center bg-slate-600 animate-ping rounded-full">
