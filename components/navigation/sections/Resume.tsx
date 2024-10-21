@@ -7,25 +7,21 @@ type ResumeItem = {
   details: string;
 };
 
-type ResumeCategoryProps = {
-  category: string;
-};
-
-type ResumeRowProps = {
+type ResumeProps = {
   item: ResumeItem;
 };
 
-const ResumeCategory = ({ category }: ResumeCategoryProps) => {
+const ResumeCategory = ({ item }: ResumeProps) => {
   return (
     <tr>
       <th className="p-6 text-4xl text-left" colSpan={2}>
-        {category}
+        {item.category}
       </th>
     </tr>
   );
 };
 
-const ResumeRow = ({ item }: ResumeRowProps) => {
+const ResumeRow = ({ item }: ResumeProps) => {
   return (
     <tr>
       <td className="flex flex-col p-6">
@@ -45,9 +41,7 @@ export default function Resume() {
 
   resumeData.forEach((item, index) => {
     if (item.category !== lastCategory) {
-      rows.push(
-        <ResumeCategory category={item.category} key={`category-${index}`} />
-      );
+      rows.push(<ResumeCategory item={item} key={`category-${index}`} />);
       lastCategory = item.category;
     }
     rows.push(<ResumeRow item={item} key={`row-${index}`} />);
