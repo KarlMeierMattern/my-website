@@ -1,17 +1,17 @@
-import investcalc from "@/app/public/images/projects/pr1-invest-calc.png";
-import investcalc2 from "@/app/public/images/projects/pr1-invest-calc2.png";
-import book1 from "@/app/public/images/books/book1.png";
-import book2 from "@/app/public/images/books/book2.png";
-import book3 from "@/app/public/images/books/book3.png";
-import book4 from "@/app/public/images/books/book4.png";
-import book5 from "@/app/public/images/books/book5.png";
-import book6 from "@/app/public/images/books/book6.png";
-import book7 from "@/app/public/images/books/book7.png";
-import book8 from "@/app/public/images/books/book8.png";
-import book9 from "@/app/public/images/books/book9.png";
-import book10 from "@/app/public/images/books/book10.png";
-import book11 from "@/app/public/images/books/book11.png";
-import book12 from "@/app/public/images/books/book12.png";
+import investcalc from "../../app/public/images/projects/pr1-invest-calc.png";
+import colourBot from "../../app/public/images/projects/colour-bot.png";
+import book1 from "../../app/public/images/books/Book1.png";
+import book2 from "../../app/public/images/books/Book2.png";
+import book3 from "../../app/public/images/books/Book3.png";
+import book4 from "../../app/public/images/books/Book4.png";
+import book5 from "../../app/public/images/books/Book5.png";
+import book6 from "../../app/public/images/books/Book6.png";
+import book7 from "../../app/public/images/books/Book7.png";
+import book8 from "../../app/public/images/books/Book8.png";
+import book9 from "../../app/public/images/books/Book9.png";
+import book10 from "../../app/public/images/books/Book10.png";
+import book11 from "../../app/public/images/books/Book11.png";
+import book12 from "../../app/public/images/books/Book12.png";
 
 const profileInfo = [
   {
@@ -45,9 +45,10 @@ const portfolioData = [
     link: "https://future-calc-c5y9hfq58-alexanders-projects-51d292f6.vercel.app/",
   },
   {
-    title: "Project 2",
-    description: "Description for Project 2",
-    src: investcalc2,
+    title: "Seasonal Colour Analysis Bot",
+    description:
+      "Developed an interactive Next.js front-end application that utilises TensorFlow computer vision libraries to detect facial landmarks and analyse colour data. Integrated with OpenAI’s API to deliver personalised styling recommendations based on facial features and individual preferences, helping users select the most flattering colours for different seasons and occasions.",
+    src: colourBot,
   },
   {
     title: "Project 3",
