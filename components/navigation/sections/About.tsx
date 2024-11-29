@@ -1,4 +1,4 @@
-import Card from "../../Card";
+import Card from "@/components/Card";
 import React from "react";
 import { profileInfo } from "@/components/navigation/userData";
 
