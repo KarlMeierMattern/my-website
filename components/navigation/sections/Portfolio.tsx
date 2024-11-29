@@ -16,11 +16,19 @@ export default function Portfolio() {
             key={index}
           >
             <Card>
-              <div className="image-container rounded-xl mb-4">
-                <Image className="rounded-xl" src={item.src} alt={item.title} />
-              </div>
-              <h3 className="text-3xl font-semibold">{item.title}</h3>
-              <p className="text-lg mt-2 font-extralight">{item.description}</p>
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <div className="image-container rounded-xl mb-4">
+                  <Image
+                    className="rounded-xl"
+                    src={item.src}
+                    alt={item.title}
+                  />
+                </div>
+                <h3 className="text-3xl font-semibold">{item.title}</h3>
+                <p className="text-lg mt-2 font-extralight">
+                  {item.description}
+                </p>
+              </a>
             </Card>
           </div>
         ))}

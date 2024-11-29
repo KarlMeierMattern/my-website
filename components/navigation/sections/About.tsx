@@ -6,6 +6,17 @@ const About = () => {
   return (
     <div className="grid justify-center items-center mt-40">
       <div className="text-8xl italic pb-12">About</div>
+      <div>
+        <p className="text-2xl pb-12">
+          Aspiring software engineer with a passion for data science,
+          mathematics, and statistics. On a path to merge my technical
+          proficiency in coding with data-driven insights to create
+          client-facing web applications. With a foundation in building software
+          and a deep interest in solving complex problems, I am driven by the
+          challenge of blending both fields to build intelligent, scalable
+          applications that meet client needs and drive business value.
+        </p>
+      </div>
       <div className="grid grid-cols-2 gap-8">
         {profileInfo.map((profile, index) => (
           <div

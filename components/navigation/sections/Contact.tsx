@@ -28,7 +28,9 @@ export default function Contact({ section, className }: ContentProps) {
     >
       <footer className="bg-zinc-100 py-12 mt-auto">
         <div className="container mx-auto px-4">
-          <p className="text-9xl text-zinc-600 mb-8">tell me what's next...</p>
+          <p className="text-9xl text-zinc-600 mb-8">
+            tell me what&apos;s next...
+          </p>
           <p className="text-4xl text-zinc-400 mb-8">
             karlmeiermattern@gmail.com
           </p>

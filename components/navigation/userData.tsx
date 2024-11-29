@@ -1,4 +1,17 @@
-import investcalc from "@/app/public/images/invest-calc.png";
+import investcalc from "@/app/public/images/projects/pr1-invest-calc.png";
+import investcalc2 from "@/app/public/images/projects/pr1-invest-calc2.png";
+import book1 from "@/app/public/images/books/book1.png";
+import book2 from "@/app/public/images/books/book2.png";
+import book3 from "@/app/public/images/books/book3.png";
+import book4 from "@/app/public/images/books/book4.png";
+import book5 from "@/app/public/images/books/book5.png";
+import book6 from "@/app/public/images/books/book6.png";
+import book7 from "@/app/public/images/books/book7.png";
+import book8 from "@/app/public/images/books/book8.png";
+import book9 from "@/app/public/images/books/book9.png";
+import book10 from "@/app/public/images/books/book10.png";
+import book11 from "@/app/public/images/books/book11.png";
+import book12 from "@/app/public/images/books/book12.png";
 
 const profileInfo = [
   {
@@ -19,20 +32,22 @@ const profileInfo = [
   {
     title: "Tech Due Diligence",
     description:
-      "Assisting clients in navigating carve-out complexities in M&A transactions to ensure a smooth technology transition while maximising asset value.”",
+      "Assisting clients in navigating carve-out complexities in M&A transactions to ensure a smooth technology transition while maximising asset value.",
   },
 ];
 
 const portfolioData = [
   {
-    title: "Project 1",
-    description: "Description for Project 1",
+    title: "Financial Growth Calculator",
+    description:
+      "Developed a React application that visualises the impact of compounded monthly investments by allowing users to input multiple investment periods, monthly contributions, and expected annual return rates. The app dynamically calculates and displays the final balance, total contributions, and earnings through an intuitive graphical interface, making it easier for users to plan and understand their financial growth over time.",
     src: investcalc,
+    link: "https://future-calc-c5y9hfq58-alexanders-projects-51d292f6.vercel.app/",
   },
   {
     title: "Project 2",
     description: "Description for Project 2",
-    src: investcalc,
+    src: investcalc2,
   },
   {
     title: "Project 3",
@@ -48,81 +63,220 @@ const portfolioData = [
 
 const resumeData = [
   {
-    category: "Education",
-    title: "Bachelor of Science in Computer Science",
+    category: "Experience",
+    title: "M&A Transaction Services",
     description:
-      "Completed a comprehensive curriculum focusing on software development and algorithms.",
-    details: "January 2018 - December 2022, Cape Town",
+      "Manager in M&A Transaction Services with expertise in financial analysis, tech due diligence, data-driven decision-making, and start-up team development, delivering strategic insights to clients across diverse industries.",
+    details: "PwC | 2023.01 - present",
   },
   {
-    category: "Education",
-    title: "Master of Science in Artificial Intelligence",
-    description: "Specialized in machine learning and computer vision.",
-    details: "January 2022 - Present, Cape Town",
+    category: "Experience",
+    title: "Audit Assurance",
+    description:
+      "Senior Associate with three years of experience spanning renewable energy, FinTech, FMCG, and manufacturing.",
+    details: "PwC | 2020.01 - 2022.12",
   },
   {
     category: "Projects",
-    title: "Personal Finance Tracker",
+    title: "LLM Chatbot for University Students",
     description:
-      "Developed a web application for tracking personal expenses and budgeting.",
+      "Built a dynamic chatbot using LangChain and Retrieval-Augmented Generation (RAG) technology to assist myself in navigating course offerings across multiple faculties. The chatbot provides accurate, real-time responses to natural language queries about course details, prerequisites, and academic programs.",
     details: "",
   },
   {
     category: "Projects",
-    title: "E-commerce Website",
+    title: "Seasonal Colour Analysis Bot",
     description:
-      "Built a full-stack e-commerce platform with a focus on user experience.",
+      "Developed an interactive Next.js front-end application that utilises TensorFlow computer vision libraries to detect facial landmarks and analyse colour data. Integrated with OpenAI’s API to deliver personalised styling recommendations based on facial features and individual preferences, helping users select the most flattering colours for different seasons and occasions.",
+    details: "",
+  },
+  {
+    category: "Projects",
+    title: "Financial Growth Calculator",
+    description:
+      "Developed a React application that visualises the impact of compounded monthly investments by allowing users to input multiple investment periods, monthly contributions, and expected annual return rates. The app dynamically calculates and displays the final balance, total contributions, and earnings through an intuitive graphical interface, making it easier for users to plan and understand their financial growth over time.",
+    details: "",
+  },
+  {
+    category: "Projects",
+    title: "Multilingual Video Translation Bot",
+    description:
+      "Developed a bot utilising the Azure Language Service SDK to ingest and translate foreign-language videos into English. The bot leverages Azure’s speech-to-text and translation capabilities to convert audio from videos into text, then translates the content accurately into English. Built a simple client-facing app using vanilla JS and Node.js.",
     details: "",
   },
   {
     category: "Certifications",
-    title: "Certified TensorFlow Developer",
+    title: "Machine Learning Specialisation",
     description:
-      "Obtained certification to validate expertise in TensorFlow and machine learning applications.",
-    details:
-      "Issued by Google. Completed a series of projects demonstrating proficiency in model training and deployment.",
+      "Trained and tested widely used supervised learning algorithms—including linear regression, logistic regression, decision trees, support vector machines, and ensemble methods—while learning data preprocessing, regularisation, hyperparameter tuning, machine learning pipelines, and the bias-variance tradeoff.",
+    details: "IBM | Supervised ML | Regression & Classification | 2023",
   },
   {
     category: "Certifications",
-    title: "AWS Certified Solutions Architect",
+    title: "Azure AI Engineer Associate",
     description:
-      "Certification demonstrating knowledge in designing distributed systems on AWS.",
-    details:
-      "Focused on best practices for cloud architecture and deployment strategies.",
+      "Hands-on experience leveraging Azure AI services such as Azure Machine Learning, Cognitive Services, Vision, Document Intelligence, Language Services, and App Services. Proficient in using Azure’s cloud-based tools to build and scale AI solutions for business needs.",
+    details: "Microsoft | in-progress",
   },
   {
-    category: "Experience",
-    title: "Computer vision speech-to-text program for Assurance",
-    description:
-      "Developed a program that converts spoken language into text using advanced computer vision techniques.",
-    details:
-      "Utilized Python and TensorFlow for model training. Improved transcription accuracy by 20% through data augmentation.",
+    category: "Certifications",
+    title: "AWS Cloud Fundamentals",
+    description: "",
+    details: "Amazon | 2024",
   },
   {
-    category: "Experience",
-    title: "Software Engineer Intern at TechCorp",
-    description:
-      "Contributed to the development of internal tools and automated workflows.",
-    details:
-      "Collaborated with a team of engineers to design and implement features. Gained experience with Agile methodologies.",
+    category: "Certifications",
+    title: "Azure AI Fundamentals",
+    description: "",
+    details: "Microsoft | 2024",
+  },
+  {
+    category: "Certifications",
+    title: "Mathematics for Machine Learning and Data Science Specialisation",
+    description: "",
+    details: "DeepLearning.ai | in-progress",
+  },
+  {
+    category: "Certifications",
+    title: "Machine Learning Specialisation",
+    description: "",
+    details: "DeepLearning.ai | in-progress",
   },
   {
     category: "Skills",
-    title: "Programming Languages",
+    title: "Backend Frameworks",
     description:
-      "Proficient in multiple programming languages for various applications.",
-    details:
-      "JavaScript, Python, Java, C++ * Sxperienced in building scalable applications.",
+      "Proficient in designing robust backend systems using frameworks with a focus on scalability, performance, and maintainability.",
+    details: "Flask, Node.js, Express",
   },
   {
     category: "Skills",
-    title: "Web Development",
+    title: "Front-End Frameworks",
     description:
       "Skilled in building responsive and user-friendly web applications.",
+    details: "React, Tailwind CSS, CSS, HTML, Vite, UI/UX design principles.",
+  },
+  {
+    category: "Skills",
+    title: "Full-Stack Frameworks",
+    description:
+      "Proficient in building scalable and efficient full-stack applications using modern frameworks.",
+    details: "Next.js, AWS Amplify",
+  },
+  {
+    category: "Skills",
+    title: "Databases",
+    description:
+      "Experienced in designing, implementing, and managing databases for efficient data storage and retrieval.",
+    details: "MongoDB, MySQL Workbench, Dynamo DB, ORM",
+  },
+  {
+    category: "Skills",
+    title: "Cloud & Hosting",
+    description: "",
+    details: "Vercel, Cloudflare, Sanity",
+  },
+  {
+    category: "Skills",
+    title: "Tools",
+    description: "",
     details:
-      "HTML, CSS, React, Node.js * Strong understanding of UI/UX design principles.",
+      "Git, GitHub, Jupyter Notebooks, CodeSandbox, Alteryx, Cursor, VS Code, Replit, Tabnine",
+  },
+  {
+    category: "Skills",
+    title: "APIs",
+    description: "",
+    details: "GraphQL, REST",
+  },
+  {
+    category: "Skills",
+    title: "Chatbots",
+    description: "",
+    details: "ChatGPT, Claude, Perplexity, v0",
+  },
+  {
+    category: "Skills",
+    title: "Other Tools",
+    description: "",
+    details: "Figma, Notion, Canva, Zapier",
+  },
+];
+
+const bookList = [
+  {
+    title: "Fooled By Randomness",
+    description:
+      "Explores the role of chance and randomness in life, success, and decision-making.",
+    src: book1,
+  },
+  {
+    title: "The Changing World Order",
+    description:
+      "Analyses historical cycles of global powers to predict future trends in economics and politics.",
+    src: book2,
+  },
+  {
+    title: "The Fabric of Reality",
+    description:
+      "How multiverses, physics, philosophy, and computer science explain the nature of reality.",
+    src: book3,
+  },
+  {
+    title: "The Psychology of Money",
+    description:
+      "Discusses the psychological factors that drive financial decisions and the importance of behaviour in building wealth.",
+    src: book4,
+  },
+  {
+    title: "The 4-Hour Workweek",
+    description:
+      "A guide to escaping the 9-to-5 grind and designing a lifestyle of freedom and efficiency.",
+    src: book5,
+  },
+  {
+    title: "Make: The Indie Maker's Book",
+    description:
+      "A practical resource for bootstrapping entrepreneurs to build and launch successful digital products.",
+    src: book6,
+  },
+  {
+    title: "Siddhartha",
+    description:
+      "Follows a man's spiritual journey in search of self-discovery and enlightenment.",
+    src: book7,
+  },
+  {
+    title: "The Alchemist",
+    description:
+      "A fable about following your dreams and listening to the heart’s wisdom through a journey of self-discovery.",
+    src: book8,
+  },
+  {
+    title: "Man’s Search for Meaning",
+    description:
+      "A reflection on finding purpose and resilience through adversity.",
+    src: book9,
+  },
+  {
+    title: "Sam Walton: Made in America",
+    description:
+      "The autobiography of Walmart’s founder, detailing his innovative business practices and success.",
+    src: book10,
+  },
+  {
+    title: "The Everything Store",
+    description:
+      "A deep dive into the rise of Amazon and the visionary leadership of Jeff Bezos.",
+    src: book11,
+  },
+  {
+    title: "From Third World to First: The Singapore Story",
+    description:
+      "Recounts Singapore’s transformation from a struggling nation to a global powerhouse.",
+    src: book12,
   },
 ];
 
 // Named export for both objects/arrays
-export { profileInfo, portfolioData, resumeData };
+export { profileInfo, portfolioData, resumeData, bookList };

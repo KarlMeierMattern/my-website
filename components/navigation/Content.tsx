@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from "react";
 import About from "@/components/navigation/sections/About";
 import Resume from "@/components/navigation/sections/Resume";
 import Portfolio from "@/components/navigation/sections/Portfolio";
-import Blog from "@/components/navigation/sections/Blog";
+import Library from "@/components/navigation/sections/Library";
 
 type ContentProps = {
   section: string;
@@ -15,7 +15,7 @@ export default function Content({ section }: ContentProps) {
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const portfolioRef = useRef<HTMLDivElement | null>(null);
   const resumeRef = useRef<HTMLDivElement | null>(null);
-  const blogRef = useRef<HTMLDivElement | null>(null);
+  const libraryRef = useRef<HTMLDivElement | null>(null);
 
   // .current holds a reference to the DOM element
   // After the component mounts, myRef.current will point to the corresponding DOM element to which you’ve attached the ref
@@ -31,8 +31,8 @@ export default function Content({ section }: ContentProps) {
         case "resume":
           resumeRef.current?.scrollIntoView({ behavior: "smooth" });
           break;
-        case "blog":
-          blogRef.current?.scrollIntoView({ behavior: "smooth" });
+        case "library":
+          libraryRef.current?.scrollIntoView({ behavior: "smooth" });
           break;
 
         default:
@@ -55,8 +55,8 @@ export default function Content({ section }: ContentProps) {
       <div ref={resumeRef}>
         <Resume />
       </div>
-      <div ref={blogRef}>
-        <Blog />
+      <div ref={libraryRef}>
+        <Library />
       </div>
     </div>
   );
