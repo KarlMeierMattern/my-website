@@ -1,5 +1,6 @@
 import investcalc from "../../app/public/images/projects/pr1-invest-calc.png";
 import colourBot from "../../app/public/images/projects/colour-bot.png";
+import cgt from "../../app/public/images/projects/CGT.png";
 import book1 from "../../app/public/images/books/Book1.png";
 import book2 from "../../app/public/images/books/Book2.png";
 import book3 from "../../app/public/images/books/Book3.png";
@@ -51,13 +52,16 @@ const portfolioData = [
     src: colourBot,
   },
   {
-    title: "Project 3",
-    description: "Description for Project 3",
-    src: investcalc,
+    title: "CGT Optimisation Tool",
+    description:
+      "Built a custom tool to optimise the utilisation of South Africa’s R40k annual Capital Gains Tax (CGT) exclusion. Designed an intuitive interface for inputting stock transactions and implemented algorithms that rank shares by capital gain per transaction while adhering to the FIFO method. The tool calculates the precise number of shares to sell, maximising tax-free profit and simplifying decision-making for investors.",
+    src: cgt,
+    link: "https://cgt-optimiser.vercel.app/",
   },
   {
-    title: "Project 4",
-    description: "Description for Project 4",
+    title: "Multilingual Video Translation Bot",
+    description:
+      "Developed a bot utilising the Azure Language Service SDK to ingest and translate foreign-language videos into English. The bot leverages Azureʼs speech-to-text and translation capabilities to convert audio from videos into text, then translates the content accurately into English. Built a simple client-facing app using vanilla JS and Node.js.",
     src: investcalc,
   },
 ];
@@ -67,7 +71,7 @@ const resumeData = [
     category: "Experience",
     title: "M&A Transaction Services",
     description:
-      "Manager in M&A Transaction Services with expertise in financial analysis, tech due diligence, data-driven decision-making, and start-up team development, delivering strategic insights to clients across diverse industries.",
+      "Qualified CA(SA) and manager in the M&A Transaction Services team, with expertise in financial analysis, tech due diligence, data-driven decision-making, and start-up team development. Leveraged Alteryx, PowerBI, Python, and Google Apps Script as part of my role in financial & tech due diligence engagements.",
     details: "PwC | 2023.01 - present",
   },
   {
@@ -210,72 +214,84 @@ const bookList = [
     description:
       "Explores the role of chance and randomness in life, success, and decision-making.",
     src: book1,
+    link: "https://www.google.com/search?q=fooled+by+randomness&rlz=1C5CHFA_enZA1129ZA1130&oq=fooled+by+randomness&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRiPAtIBCDMxMDBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "The Changing World Order",
     description:
       "Analyses historical cycles of global powers to predict future trends in economics and politics.",
     src: book2,
+    link: "https://www.google.com/search?q=the+changing+world+order&rlz=1C5CHFA_enZA1129ZA1130&oq=the+changing+world+order&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRiPAtIBCDI3ODhqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "The Fabric of Reality",
     description:
       "How multiverses, physics, philosophy, and computer science explain the nature of reality.",
     src: book3,
+    link: "https://www.google.com/search?q=the+fabric+of+reality&rlz=1C5CHFA_enZA1129ZA1130&oq=The+Fabric+of+Reality&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQczOThqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "The Psychology of Money",
     description:
       "Discusses the psychological factors that drive financial decisions and the importance of behaviour in building wealth.",
     src: book4,
+    link: "https://www.google.com/search?q=the+psychology+of+money&rlz=1C5CHFA_enZA1129ZA1130&oq=The+Psychology+of+Money&gs_lcrp=EgZjaHJvbWUqEwgAEAAYkQIY4wIYsQMYgAQYigUyEwgAEAAYkQIY4wIYsQMYgAQYigUyEAgBEC4YkQIYsQMYgAQYigUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQczMjJqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "The 4-Hour Workweek",
     description:
       "A guide to escaping the 9-to-5 grind and designing a lifestyle of freedom and efficiency.",
     src: book5,
+    link: "https://www.google.com/search?q=The+4-Hour+Workweek&rlz=1C5CHFA_enZA1129ZA1130&oq=The+4-Hour+Workweek&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzMwMWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "Make: The Indie Maker's Book",
     description:
       "A practical resource for bootstrapping entrepreneurs to build and launch successful digital products.",
     src: book6,
+    link: "https://www.google.com/search?q=Make%3A+The+Indie+Maker%27s+Book&rlz=1C5CHFA_enZA1129ZA1130&oq=Make%3A+The+Indie+Maker%27s+Book&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEHNDg0ajBqOagCALACAA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "Siddhartha",
     description:
       "Follows a man's spiritual journey in search of self-discovery and enlightenment.",
     src: book7,
+    link: "https://www.google.com/search?q=Siddhartha&rlz=1C5CHFA_enZA1129ZA1130&oq=Siddhartha&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIMCAEQLhhDGIAEGIoFMgcIAhAuGIAEMg0IAxAuGK8BGMcBGIAEMgcIBBAuGIAEMgcIBRAuGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAE0gEHNDA1ajBqOagCALACAA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "The Alchemist",
     description:
       "A fable about following your dreams and listening to the heart’s wisdom through a journey of self-discovery.",
     src: book8,
+    link: "https://www.google.com/search?q=the+alchemist&rlz=1C5CHFA_enZA1129ZA1130&oq=The+Alchemist&gs_lcrp=EgZjaHJvbWUqEwgAEAAYkQIY4wIYsQMYgAQYigUyEwgAEAAYkQIY4wIYsQMYgAQYigUyEAgBEC4YkQIYsQMYgAQYigUyDQgCEC4YkQIYgAQYigUyDAgDEAAYQxiABBiKBTIHCAQQLhiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBBzUxNmowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "Man’s Search for Meaning",
     description:
       "A reflection on finding purpose and resilience through adversity.",
     src: book9,
+    link: "https://www.google.com/search?q=man%E2%80%99s+search+for+meaning&rlz=1C5CHFA_enZA1129ZA1130&oq=Man%E2%80%99s+Search+for+Meaning&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgATSAQczMjBqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "Sam Walton: Made in America",
     description:
       "The autobiography of Walmart’s founder, detailing his innovative business practices and success.",
     src: book10,
+    link: "https://www.google.com/search?q=Sam+Walton%3A+Made+in+America&rlz=1C5CHFA_enZA1129ZA1130&oq=Sam+Walton%3A+Made+in+America&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzIzMWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "The Everything Store",
     description:
       "A deep dive into the rise of Amazon and the visionary leadership of Jeff Bezos.",
     src: book11,
+    link: "https://www.google.com/search?q=The+Everything+Store&rlz=1C5CHFA_enZA1129ZA1130&oq=The+Everything+Store&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzE1NGowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "From Third World to First: The Singapore Story",
     description:
       "Recounts Singapore’s transformation from a struggling nation to a global powerhouse.",
     src: book12,
+    link: "https://www.google.com/search?q=From+Third+World+to+First%3A+The+Singapore+Story&rlz=1C5CHFA_enZA1129ZA1130&oq=From+Third+World+to+First%3A+The+Singapore+Story&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRiPAtIBBzM2NmowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
 ];
 

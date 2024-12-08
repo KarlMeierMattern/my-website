@@ -8,13 +8,12 @@ const About = () => {
       <div className="text-8xl italic pb-12">About</div>
       <div>
         <p className="text-2xl pb-12">
-          Aspiring software engineer with a passion for data science,
-          mathematics, and statistics. On a path to merge my technical
-          proficiency in coding with data-driven insights to create
-          client-facing web applications. With a foundation in building software
-          and a deep interest in solving complex problems, I am driven by the
-          challenge of blending both fields to build intelligent, scalable
-          applications that meet client needs and drive business value.
+          Aspiring software engineer with a passion for data science, ML, AI,
+          statistical analysis, and predictive modelling. With a foundation in
+          building software and a deep interest in solving complex problems, I
+          am driven by the challenge of blending both fields to build intuitive
+          web applications. While still building practical experience, I bring
+          strong technical skills and a data-driven approach to problem-solving.
         </p>
       </div>
       <div className="grid grid-cols-2 gap-8">

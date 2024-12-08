@@ -36,7 +36,7 @@ export default function Contact({ section, className }: ContentProps) {
           </p>
           <hr className="mt-24 border-gray-300" />
           <p className="mt-8">
-            © {new Date().getFullYear()} Your Company. All rights reserved.
+            © {new Date().getFullYear()} Alexander Inc. All rights reserved.
           </p>
         </div>
       </footer>
