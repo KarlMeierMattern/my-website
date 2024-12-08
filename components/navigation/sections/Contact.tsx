@@ -31,9 +31,16 @@ export default function Contact({ section, className }: ContentProps) {
           <p className="text-9xl text-zinc-600 mb-8">
             tell me what&apos;s next...
           </p>
-          <p className="text-4xl text-zinc-400 mb-8">
-            karlmeiermattern@gmail.com
-          </p>
+          <a
+            href="https://www.linkedin.com/in/karl-alexander-meier-mattern-16a3b919a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <p className="text-4xl text-zinc-400 mb-8">
+              karlmeiermattern@gmail.com
+            </p>
+          </a>
           <hr className="mt-24 border-gray-300" />
           <p className="mt-8">
             © {new Date().getFullYear()} Alexander Inc. All rights reserved.
