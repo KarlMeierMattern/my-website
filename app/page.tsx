@@ -4,8 +4,6 @@ import Navbar from "@/components/navigation/Navbar";
 import Content from "@/components/navigation/Content";
 import Image from "next/image";
 import landscape from "@/app/public/images/landscape.png";
-import imageSmall from "@/app/public/images/img-no-bkg.png";
-import me from "@/app/public/images/me.png";
 import alsoMe from "@/app/public/images/alsoMe.png";
 import { useState, useEffect } from "react";
 import Contact from "@/components/navigation/sections/Contact";
