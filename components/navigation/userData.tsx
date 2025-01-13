@@ -121,7 +121,7 @@ const resumeData = [
     title: "Azure AI Engineer Associate",
     description:
       "Hands-on experience leveraging Azure AI services such as Azure Machine Learning, Cognitive Services, Vision, Document Intelligence, Language Services, and App Services. Proficient in using Azure’s cloud-based tools to build and scale AI solutions for business needs.",
-    details: "Microsoft | in-progress",
+    details: "Microsoft | 2024",
   },
   {
     category: "Certifications",
@@ -139,7 +139,7 @@ const resumeData = [
     category: "Certifications",
     title: "Mathematics for Machine Learning and Data Science Specialisation",
     description: "",
-    details: "DeepLearning.ai | in-progress",
+    details: "DeepLearning.ai | 2025",
   },
   {
     category: "Certifications",

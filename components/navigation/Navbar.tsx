@@ -17,13 +17,16 @@ export default function Navbar({
 
   return (
     <div>
-      <nav className="flex justify-evenly bg-zinc-400 bg-opacity-40 backdrop-blur-sm rounded-xl">
+      <nav
+        className={`bg-zinc-400 bg-opacity-40 backdrop-blur-sm mx-auto ${
+          isLargeScreen ? "rounded-xl p-1" : "rounded-lg p-1"
+        }`}
+      >
         {navbarOptions.map((option) => (
           <Button
             isSelected={selectedSection === option}
             key={option}
             onClick={() => setSection(option)}
-            isLargeScreen={isLargeScreen}
           >
             {option}
           </Button>

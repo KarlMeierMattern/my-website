@@ -28,7 +28,7 @@ export default function Contact({ section, className }: ContentProps) {
     >
       <footer className="bg-zinc-100 py-12 mt-auto">
         <div className="container mx-auto px-4">
-          <p className="text-9xl text-zinc-600 mb-8">
+          <p className="text-4xl md:text-9xl text-zinc-600 mb-8">
             tell me what&apos;s next...
           </p>
           <a
@@ -37,12 +37,12 @@ export default function Contact({ section, className }: ContentProps) {
             rel="noopener noreferrer"
           >
             {" "}
-            <p className="text-4xl text-zinc-400 mb-8">
+            <p className="text-2xl md:text-4xl text-zinc-400 mb-8">
               karlmeiermattern@gmail.com
             </p>
           </a>
-          <hr className="mt-24 border-gray-300" />
-          <p className="mt-8">
+          <hr className="mt-12 md:mt-24 border-gray-300" />
+          <p className="text-xs md:text-base mt-8">
             © {new Date().getFullYear()} Alexander Inc. All rights reserved.
           </p>
         </div>

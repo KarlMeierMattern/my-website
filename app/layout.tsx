@@ -5,10 +5,10 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Your App Title",
-    default: "Your App Title",
+    template: "%s | My portfolio website",
+    default: "My portfolio website",
   },
-  description: "Your app description here.",
+  description: "My portfolio website.",
   metadataBase: new URL("https://your-app-url.com"),
 };
 
