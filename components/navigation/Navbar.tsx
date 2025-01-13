@@ -5,19 +5,25 @@ import Button from "@/components/navigation/Button";
 type NavbarProps = {
   setSection: (section: string) => void;
   selectedSection: string;
+  isLargeScreen: boolean;
 };
 
-export default function Navbar({ setSection, selectedSection }: NavbarProps) {
+export default function Navbar({
+  setSection,
+  selectedSection,
+  isLargeScreen,
+}: NavbarProps) {
   const navbarOptions = ["about", "portfolio", "resume", "library", "contact"];
 
   return (
-    <div className="flex flex-col w-full">
-      <nav className="flex justify-items-center items-center text-black p-2 ml-8 bg-zinc-400 bg-opacity-40 backdrop-blur-sm rounded-xl w-fit mx-auto mt-4">
+    <div>
+      <nav className="flex justify-evenly bg-zinc-400 bg-opacity-40 backdrop-blur-sm rounded-xl">
         {navbarOptions.map((option) => (
           <Button
             isSelected={selectedSection === option}
             key={option}
             onClick={() => setSection(option)}
+            isLargeScreen={isLargeScreen}
           >
             {option}
           </Button>

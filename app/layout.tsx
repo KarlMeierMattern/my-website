@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css"; // Your global CSS
 import { playfairDisplay } from "./fonts/fonts"; // Import Playfair Display from fonts.ts
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: {
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfairDisplay.className} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
