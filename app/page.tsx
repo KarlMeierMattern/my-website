@@ -12,16 +12,17 @@ export default function Home() {
   const [section, setSection] = useState("");
 
   return (
-    <main className="bg-zinc-50 h-screen">
-      <section className=" bg-zinc-300 w-screen h-screen">
+    <main className="bg-zinc-50 min-h-screen">
+      <section className="bg-zinc-300 min-h-screen relative">
         <div className="fixed top-4 left-0 right-0 w-screen flex justify-center z-20">
           <Navbar setSection={setSection} selectedSection={section} />
         </div>
-        <div className="z-10 md:w-full md:h-screen">
+        <div className="relative w-full h-full">
           <Image
-            className="md:object-cover md:opacity-90 opacity-0 w-full h-full"
+            className="object-cover opacity-90 w-full h-full"
             src={landscape}
             alt="Landscape picture"
+            layout="fill" // This ensures the image will fill the container
           />
         </div>
         <div className="md:hidden">
