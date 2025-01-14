@@ -1,6 +1,9 @@
-import investcalc from "../../app/public/images/projects/pr1-invest-calc.png";
-import colourBot from "../../app/public/images/projects/colour-bot.png";
-import cgt from "../../app/public/images/projects/CGT.png";
+// import investcalc from "../../app/public/images/projects/pr1-invest-calc.png";
+import investCalc from "../../app/public/images/projects/investCalc.png";
+import colourBot from "../../app/public/images/projects/colourBot.png";
+import cgtTool from "../../app/public/images/projects/cgtTool.png";
+import chatBot from "../../app/public/images/projects/chatBot.png";
+import videoTranslation from "../../app/public/images/projects/videoTranslation.png";
 import book1 from "../../app/public/images/books/Book1.png";
 import book2 from "../../app/public/images/books/Book2.png";
 import book3 from "../../app/public/images/books/Book3.png";
@@ -41,28 +44,34 @@ const portfolioData = [
   {
     title: "Financial Growth Calculator",
     description:
-      "Developed a React application that visualises the impact of compounded monthly investments by allowing users to input multiple investment periods, monthly contributions, and expected annual return rates. The app dynamically calculates and displays the final balance, total contributions, and earnings through an intuitive graphical interface, making it easier for users to plan and understand their financial growth over time.",
-    src: investcalc,
+      "Developed a React application that visualises the impact of compounded monthly investments. The app dynamically calculates and displays the final balance, total contributions, and earnings making it easier for users to plan and understand their financial growth over time.",
+    src: investCalc,
     link: "https://future-calc-c5y9hfq58-alexanders-projects-51d292f6.vercel.app/",
   },
   {
-    title: "Seasonal Colour Analysis Bot",
+    title: "Seasonal Colour Analysis Tool",
     description:
-      "Developed an interactive Next.js front-end application that utilises TensorFlow computer vision libraries to detect facial landmarks and analyse colour data. Integrated with OpenAI’s API to deliver personalised styling recommendations based on facial features and individual preferences, helping users select the most flattering colours for different seasons and occasions.",
+      "Developed an interactive Next.js application that uses TensorFlow computer vision libraries to detect facial landmarks and analyse colour data. Integrated with OpenAI’s API to deliver personalised styling recommendations based on facial features and individual preferences.",
     src: colourBot,
   },
   {
     title: "CGT Optimisation Tool",
     description:
-      "Built a custom tool to optimise the utilisation of South Africa’s R40k annual Capital Gains Tax (CGT) exclusion. Designed an intuitive interface for inputting stock transactions and implemented algorithms that rank shares by capital gain per transaction while adhering to the FIFO method. The tool calculates the precise number of shares to sell, maximising tax-free profit and simplifying decision-making for investors.",
-    src: cgt,
+      "Built a custom tool to optimise the utilisation of South Africa’s annual Capital Gains Tax exclusion. Implemented algorithms that rank shares by capital gain per transaction in order to maximise tax-free profit.",
+    src: cgtTool,
     link: "https://cgt-optimiser.vercel.app/",
   },
   {
     title: "Multilingual Video Translation Bot",
     description:
-      "Developed a bot utilising the Azure Language Service SDK to ingest and translate foreign-language videos into English. The bot leverages Azureʼs speech-to-text and translation capabilities to convert audio from videos into text, then translates the content accurately into English. Built a simple client-facing app using vanilla JS and Node.js.",
-    src: investcalc,
+      "Developed a bot utilising the Azure Language Service SDK speech-to-text and translation capabilities to ingest and translate foreign-language videos into English. Built a simple client-facing app using vanilla JS and Node.js.",
+    src: videoTranslation,
+  },
+  {
+    title: "LLM Chatbot for University Students",
+    description:
+      "Built a chatbot using LangChain and Retrieval-Augmented Generation (RAG) to assist in navigating course offerings across multiple faculties. The chatbot provides real-time responses about course details, prerequisites, and academic programs.",
+    src: chatBot,
   },
 ];
 
@@ -80,34 +89,6 @@ const resumeData = [
     description:
       "Senior Associate with three years of experience spanning renewable energy, FinTech, FMCG, and manufacturing.",
     details: "PwC | 2020.01 - 2022.12",
-  },
-  {
-    category: "Projects",
-    title: "LLM Chatbot for University Students",
-    description:
-      "Built a dynamic chatbot using LangChain and Retrieval-Augmented Generation (RAG) technology to assist myself in navigating course offerings across multiple faculties. The chatbot provides accurate, real-time responses to natural language queries about course details, prerequisites, and academic programs.",
-    details: "",
-  },
-  {
-    category: "Projects",
-    title: "Seasonal Colour Analysis Bot",
-    description:
-      "Developed an interactive Next.js front-end application that utilises TensorFlow computer vision libraries to detect facial landmarks and analyse colour data. Integrated with OpenAI’s API to deliver personalised styling recommendations based on facial features and individual preferences, helping users select the most flattering colours for different seasons and occasions.",
-    details: "",
-  },
-  {
-    category: "Projects",
-    title: "Financial Growth Calculator",
-    description:
-      "Developed a React application that visualises the impact of compounded monthly investments by allowing users to input multiple investment periods, monthly contributions, and expected annual return rates. The app dynamically calculates and displays the final balance, total contributions, and earnings through an intuitive graphical interface, making it easier for users to plan and understand their financial growth over time.",
-    details: "",
-  },
-  {
-    category: "Projects",
-    title: "Multilingual Video Translation Bot",
-    description:
-      "Developed a bot utilising the Azure Language Service SDK to ingest and translate foreign-language videos into English. The bot leverages Azure’s speech-to-text and translation capabilities to convert audio from videos into text, then translates the content accurately into English. Built a simple client-facing app using vanilla JS and Node.js.",
-    details: "",
   },
   {
     category: "Certifications",
@@ -152,21 +133,15 @@ const resumeData = [
     title: "Backend Frameworks",
     description:
       "Proficient in designing robust backend systems using frameworks with a focus on scalability, performance, and maintainability.",
-    details: "Flask, Node.js, Express",
+    details: "Flask, Node.js, Express, AWS Amplify",
   },
   {
     category: "Skills",
-    title: "Front-End Frameworks",
+    title: "Frontend Frameworks",
     description:
       "Skilled in building responsive and user-friendly web applications.",
-    details: "React, Tailwind CSS, CSS, HTML, Vite, UI/UX design principles.",
-  },
-  {
-    category: "Skills",
-    title: "Full-Stack Frameworks",
-    description:
-      "Proficient in building scalable and efficient full-stack applications using modern frameworks.",
-    details: "Next.js, AWS Amplify",
+    details:
+      "React, Next.js, Tailwind CSS, CSS, HTML, Vite, UI/UX design principles.",
   },
   {
     category: "Skills",
