@@ -24,13 +24,13 @@ export default function Portfolio() {
                     alt={item.title}
                   />
                 </div>
-                <h3 className="text-lg font-bold lg:text-4xl lg:font-semibold lg:pt-4">
-                  {item.title}
-                </h3>
-                <p className="text-base pt-2 lg:text-xl lg:pt-8 font-extralight">
-                  {item.description}
-                </p>
               </a>
+              <h3 className="text-lg font-bold lg:text-4xl lg:font-semibold lg:pt-4">
+                {item.title}
+              </h3>
+              <p className="text-base pt-2 lg:text-xl lg:pt-8 font-extralight">
+                {item.description}
+              </p>
             </Card>
           </div>
         ))}
