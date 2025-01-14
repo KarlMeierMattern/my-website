@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 type ContentProps = {
   section: string;
@@ -38,7 +39,7 @@ export default function Contact({ section, className }: ContentProps) {
           </p>
           <div className="flex flex-row items-end text-sm sm:text-2xl md:text-4xl text-zinc-400 mb-8">
             <FontAwesomeIcon
-              icon={faLinkedin}
+              icon={faLinkedin as IconDefinition}
               className="text-sm sm:text-base md:text-xl lg:text-xl xl:text-2xl"
             />
             <a
