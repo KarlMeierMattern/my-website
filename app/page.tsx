@@ -5,7 +5,7 @@ import Content from "@/components/navigation/Content";
 import Image from "next/image";
 import landscape from "@/app/public/images/landscape.png";
 import alsoMe from "@/app/public/images/alsoMe.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Contact from "@/components/navigation/sections/Contact";
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="md:grid md:grid-cols-[0.5fr_1fr_0.5fr]">
+      <section className="grid lg:grid-cols-[0.5fr_1fr_0.5fr]">
         <div className="col-start-2">
           <Content section={section} />
         </div>

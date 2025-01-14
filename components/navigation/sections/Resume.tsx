@@ -14,7 +14,7 @@ type ResumeProps = {
 const ResumeCategory = ({ item }: ResumeProps) => {
   return (
     <tr>
-      <th className="p-2 md:p-6 text-2xl md:text-4xl text-left" colSpan={2}>
+      <th className="p-2 lg:p-6 text-2xl lg:text-4xl text-left" colSpan={2}>
         {item.category}
       </th>
     </tr>
@@ -24,12 +24,12 @@ const ResumeCategory = ({ item }: ResumeProps) => {
 const ResumeRow = ({ item }: ResumeProps) => {
   return (
     <tr>
-      <td className="flex flex-col p-2 md:p-6">
+      <td className="flex flex-col p-2 lg:p-6">
         <div className="flex justify-between">
-          <strong className="text-sm md:text-lg">{item.title}</strong>
+          <strong className="text-sm lg:text-lg">{item.title}</strong>
           <span className="text-right text-xs italic">{item.details}</span>
         </div>
-        <p className="text-xs md:text-base mt-2">{item.description}</p>
+        <p className="text-xs lg:text-base mt-2">{item.description}</p>
       </td>
     </tr>
   );
@@ -48,8 +48,8 @@ export default function Resume() {
   });
 
   return (
-    <div className="mt-20 px-8 md:mt-40 md:grid md:justify-center md:items-center">
-      <div className="text-4xl md:text-8xl italic pb-12">Resume</div>
+    <div className="mt-20 px-8 lg:mt-40 lg:grid lg:justify-center lg:items-center">
+      <div className="text-4xl lg:text-8xl italic pb-12">Resume</div>
       <table>
         <tbody>{rows}</tbody>
       </table>

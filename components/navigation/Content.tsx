@@ -23,10 +23,14 @@ export default function Content({ section }: ContentProps) {
     const scrollToSection = () => {
       switch (section) {
         case "about":
-          aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+          aboutRef.current?.scrollIntoView({
+            behavior: "smooth",
+          });
           break;
         case "portfolio":
-          portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
+          portfolioRef.current?.scrollIntoView({
+            behavior: "smooth",
+          });
           break;
         case "resume":
           resumeRef.current?.scrollIntoView({ behavior: "smooth" });

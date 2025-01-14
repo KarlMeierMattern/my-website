@@ -4,6 +4,7 @@ import colourBot from "../../app/public/images/projects/colourBot.png";
 import cgtTool from "../../app/public/images/projects/cgtTool.png";
 import chatBot from "../../app/public/images/projects/chatBot.png";
 import videoTranslation from "../../app/public/images/projects/videoTranslation.png";
+import govDash from "../../app/public/images/projects/govDash.png";
 import book1 from "../../app/public/images/books/Book1.png";
 import book2 from "../../app/public/images/books/Book2.png";
 import book3 from "../../app/public/images/books/Book3.png";
@@ -72,6 +73,12 @@ const portfolioData = [
     description:
       "Built a chatbot using LangChain and Retrieval-Augmented Generation (RAG) to assist in navigating course offerings across multiple faculties. The chatbot provides real-time responses about course details, prerequisites, and academic programs.",
     src: chatBot,
+  },
+  {
+    title: "South African Government Dashboard",
+    description:
+      "Developed a dashboard tool using a custom API scraper to visualise macroeconomic factors of the South African economy, including interest rates, GDP, unemployment, and exchange rates.",
+    src: govDash,
   },
 ];
 

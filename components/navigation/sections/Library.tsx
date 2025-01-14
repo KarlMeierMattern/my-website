@@ -4,9 +4,9 @@ import { bookList } from "@/components/navigation/userData";
 
 const Library = () => {
   return (
-    <div className="mt-20 px-8 md:mt-40 md:grid md:justify-center md:items-center">
-      <div className="text-4xl md:text-8xl italic pb-12">Library</div>
-      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-8">
+    <div className="mt-20 px-8 lg:mt-40 lg:grid lg:justify-center lg:items-center">
+      <div className="text-4xl lg:text-8xl italic pb-12">Library</div>
+      <div className="grid gap-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:gap-8 xl:grid-cols-3">
         {bookList.map((book, index) => (
           <div
             key={index}
@@ -15,7 +15,7 @@ const Library = () => {
             <a href={book.link} target="_blank" rel="noopener noreferrer">
               <Image src={book.src} alt={book.title} />
             </a>
-            <div className="text-xs md:text-sm pl-4 w-full h-full">
+            <div className="text-sm sm:text-lg md:text-xl lg:text-sm pl-4 w-full h-full">
               {book.description}
             </div>
           </div>

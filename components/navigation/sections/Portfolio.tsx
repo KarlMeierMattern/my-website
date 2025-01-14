@@ -5,13 +5,13 @@ import { portfolioData } from "@/components/navigation/userData";
 
 export default function Portfolio() {
   return (
-    <div className="mt-20 px-8 md:mt-40 md:grid md:justify-center md:items-center">
-      <div className="text-4xl md:text-8xl italic pb-12">Portfolio</div>
-      <div className={`grid grid-cols-1 gap-4 md:grid md:grid-cols-2 md:gap-8`}>
+    <div className="mt-20 px-8 lg:mt-40">
+      <div className="text-4xl pb-12 italic lg:text-8xl">Portfolio</div>
+      <div className={`grid grid-cols-1 gap-4 lg:grid lg:grid-cols-2 lg:gap-8`}>
         {portfolioData.map((item, index) => (
           <div
             className={`transition-transform duration-500 ${
-              index % 2 === 0 ? "md:translate-y-4" : "md:translate-y-12"
+              index % 2 === 0 ? "lg:translate-y-4" : "lg:translate-y-12"
             }`}
             key={index}
           >
@@ -24,10 +24,10 @@ export default function Portfolio() {
                     alt={item.title}
                   />
                 </div>
-                <h3 className="text-lg font-bold md:text-4xl md:font-semibold md:pt-4">
+                <h3 className="text-lg font-bold lg:text-4xl lg:font-semibold lg:pt-4">
                   {item.title}
                 </h3>
-                <p className="text-base pt-2 md:text-xl md:pt-8 font-extralight">
+                <p className="text-base pt-2 lg:text-xl lg:pt-8 font-extralight">
                   {item.description}
                 </p>
               </a>
