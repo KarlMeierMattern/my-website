@@ -13,12 +13,12 @@ export default function Home() {
 
   return (
     <main className="bg-zinc-50 min-h-screen">
-      <section className="bg-zinc-300 min-h-screen relative">
+      <section className="bg-zinc-300 max-h-screen relative">
         <div className="fixed top-4 left-0 right-0 w-screen flex justify-center z-20">
           <Navbar setSection={setSection} selectedSection={section} />
         </div>
 
-        {/* Landscape image (visible on large screens only) */}
+        {/* landscape image (visible on large screens only) */}
         <div className="relative w-full h-screen md:block hidden">
           <Image
             className="object-cover opacity-90 w-full h-full"
@@ -29,7 +29,7 @@ export default function Home() {
           />
         </div>
 
-        {/* AlsoMe image (visible on small screens only) */}
+        {/* alsoMe image (visible on small screens only) */}
         <div className="md:hidden relative min-h-screen">
           <Image
             className="absolute bottom-0 right-0 w-3/4 z-20 opacity-80"
