@@ -12,8 +12,8 @@ export default function Home() {
   const [section, setSection] = useState("");
 
   return (
-    <main className="bg-zinc-50 min-h-screen">
-      <section className="bg-zinc-300 max-h-screen relative">
+    <main className="bg-zinc-50">
+      <section className="bg-zinc-300 h-screen relative">
         <div className="fixed top-4 left-0 right-0 w-screen flex justify-center z-20">
           <Navbar setSection={setSection} selectedSection={section} />
         </div>
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
 
         {/* alsoMe image (visible on small screens only) */}
-        <div className="md:hidden relative min-h-screen">
+        <div className="md:hidden relative w-full h-screen">
           <Image
             className="absolute bottom-0 right-0 w-3/4 z-20 opacity-80"
             src={alsoMe}
