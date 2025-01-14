@@ -201,7 +201,7 @@ const bookList = [
   {
     title: "The Changing World Order",
     description:
-      "Analyses historical cycles of global powers to predict future trends in economics and politics.",
+      "Analyses historical cycles of global powers in economics and politics.",
     src: book2,
     link: "https://www.google.com/search?q=the+changing+world+order&rlz=1C5CHFA_enZA1129ZA1130&oq=the+changing+world+order&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRiPAtIBCDI3ODhqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8",
   },
@@ -215,21 +215,21 @@ const bookList = [
   {
     title: "The Psychology of Money",
     description:
-      "Discusses the psychological factors that drive financial decisions and the importance of behaviour in building wealth.",
+      "Discusses factors that drive financial decisions and the importance of behaviour in building wealth.",
     src: book4,
     link: "https://www.google.com/search?q=the+psychology+of+money&rlz=1C5CHFA_enZA1129ZA1130&oq=The+Psychology+of+Money&gs_lcrp=EgZjaHJvbWUqEwgAEAAYkQIY4wIYsQMYgAQYigUyEwgAEAAYkQIY4wIYsQMYgAQYigUyEAgBEC4YkQIYsQMYgAQYigUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQczMjJqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "The 4-Hour Workweek",
     description:
-      "A guide to escaping the 9-to-5 grind and designing a lifestyle of freedom and efficiency.",
+      "Guide to escaping the 9-to-5 grind and designing a lifestyle of freedom.",
     src: book5,
     link: "https://www.google.com/search?q=The+4-Hour+Workweek&rlz=1C5CHFA_enZA1129ZA1130&oq=The+4-Hour+Workweek&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzMwMWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "Make: The Indie Maker's Book",
     description:
-      "A practical resource for bootstrapping entrepreneurs to build and launch successful digital products.",
+      "Practical resource for bootstrapping entrepreneurs to build and launch digital products.",
     src: book6,
     link: "https://www.google.com/search?q=Make%3A+The+Indie+Maker%27s+Book&rlz=1C5CHFA_enZA1129ZA1130&oq=Make%3A+The+Indie+Maker%27s+Book&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg60gEHNDg0ajBqOagCALACAA&sourceid=chrome&ie=UTF-8",
   },
@@ -243,7 +243,7 @@ const bookList = [
   {
     title: "The Alchemist",
     description:
-      "A fable about following your dreams and listening to the heart’s wisdom through a journey of self-discovery.",
+      "Fable about following your dreams through a journey of self-discovery.",
     src: book8,
     link: "https://www.google.com/search?q=the+alchemist&rlz=1C5CHFA_enZA1129ZA1130&oq=The+Alchemist&gs_lcrp=EgZjaHJvbWUqEwgAEAAYkQIY4wIYsQMYgAQYigUyEwgAEAAYkQIY4wIYsQMYgAQYigUyEAgBEC4YkQIYsQMYgAQYigUyDQgCEC4YkQIYgAQYigUyDAgDEAAYQxiABBiKBTIHCAQQLhiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBBzUxNmowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
@@ -257,14 +257,14 @@ const bookList = [
   {
     title: "Sam Walton: Made in America",
     description:
-      "The autobiography of Walmart’s founder, detailing his innovative business practices and success.",
+      "Autobiography of Walmart’s founder, detailing his innovative business practices and success.",
     src: book10,
     link: "https://www.google.com/search?q=Sam+Walton%3A+Made+in+America&rlz=1C5CHFA_enZA1129ZA1130&oq=Sam+Walton%3A+Made+in+America&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzIzMWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
   {
     title: "The Everything Store",
     description:
-      "A deep dive into the rise of Amazon and the visionary leadership of Jeff Bezos.",
+      "Deep dive into the rise of Amazon and the visionary leadership of Jeff Bezos.",
     src: book11,
     link: "https://www.google.com/search?q=The+Everything+Store&rlz=1C5CHFA_enZA1129ZA1130&oq=The+Everything+Store&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzE1NGowajmoAgCwAgA&sourceid=chrome&ie=UTF-8",
   },
