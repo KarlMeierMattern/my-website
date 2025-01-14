@@ -13,11 +13,12 @@ export default function Home() {
 
   return (
     <main className="bg-zinc-50">
-      <section className="bg-zinc-300 h-screen relative">
+      <section className="bg-zinc-300 relative overflow-hidden">
+        {" "}
+        {/* Adjusted section styles */}
         <div className="fixed top-4 left-0 right-0 w-screen flex justify-center z-20">
           <Navbar setSection={setSection} selectedSection={section} />
         </div>
-
         {/* landscape image (visible on large screens only) */}
         <div className="relative w-full h-screen md:block hidden">
           <Image
@@ -28,7 +29,6 @@ export default function Home() {
             priority // Optional: For performance optimization
           />
         </div>
-
         {/* alsoMe image (visible on small screens only) */}
         <div className="md:hidden relative w-full h-screen">
           <Image
