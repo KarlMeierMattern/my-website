@@ -17,15 +17,20 @@ export default function Home() {
         <div className="fixed top-4 left-0 right-0 w-screen flex justify-center z-20">
           <Navbar setSection={setSection} selectedSection={section} />
         </div>
-        <div className="relative w-full h-full">
+
+        {/* Landscape image (visible on large screens only) */}
+        <div className="relative w-full h-screen md:block hidden">
           <Image
             className="object-cover opacity-90 w-full h-full"
             src={landscape}
             alt="Landscape picture"
-            layout="fill" // This ensures the image will fill the container
+            layout="fill" // Image stays the same on large screens
+            priority // Optional: For performance optimization
           />
         </div>
-        <div className="md:hidden">
+
+        {/* AlsoMe image (visible on small screens only) */}
+        <div className="md:hidden relative min-h-screen">
           <Image
             className="absolute bottom-0 right-0 w-3/4 z-20 opacity-80"
             src={alsoMe}
@@ -41,6 +46,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Content and Contact Section */}
       <section className="grid lg:grid-cols-[0.5fr_1fr_0.5fr]">
         <div className="col-start-2">
           <Content section={section} />
