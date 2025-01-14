@@ -38,7 +38,6 @@ export default function Content({ section }: ContentProps) {
         case "library":
           libraryRef.current?.scrollIntoView({ behavior: "smooth" });
           break;
-
         default:
           break;
       }
