@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { portfolioData } from "@/components/navigation/userData";
 
-// port
 export default function Portfolio() {
   return (
     <div className="mt-20 px-8 lg:mt-40">
