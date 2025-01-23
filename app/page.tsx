@@ -8,6 +8,7 @@ import alsoMe from "@/app/public/images/alsoMe.png";
 import { useState } from "react";
 import Contact from "@/components/navigation/sections/Contact";
 
+// Home
 export default function Home() {
   const [section, setSection] = useState("");
 
