@@ -47,7 +47,7 @@ const portfolioData = [
     description:
       "Developed a React application that visualises the impact of compounded monthly investments. The app dynamically calculates and displays the final balance, total contributions, and earnings making it easier for users to plan and understand their financial growth over time.",
     src: investCalc,
-    link: "https://future-calc-c5y9hfq58-alexanders-projects-51d292f6.vercel.app/",
+    link: "https://future-calc.vercel.app/",
   },
   {
     title: "Seasonal Colour Analysis Tool",
