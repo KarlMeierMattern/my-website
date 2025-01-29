@@ -14,8 +14,7 @@ export default function Home() {
 
   return (
     <main className="bg-zinc-50">
-      <section className="bg-zinc-300 relative w-full h-screen overflow-hidden">
-        {" "}
+      <section className="bg-zinc-300 relative w-full min-h-[100dvh] overflow-hidden">
         {/* Adjusted section styles */}
         <div className="fixed top-4 left-0 right-0 w-screen flex justify-center z-20">
           <Navbar setSection={setSection} selectedSection={section} />
@@ -31,18 +30,18 @@ export default function Home() {
           />
         </div>
         {/* alsoMe image (visible on small screens only) */}
-        <div className="md:hidden relative w-full h-screen">
+        <div className="md:hidden relative w-full h-screen flex-grow">
           <Image
-            className="absolute bottom-0 right-0 w-3/4 z-20 opacity-80"
+            className="absolute bottom-0 left-0 z-20 opacity-80"
             src={alsoMe}
             alt="Alternate picture"
             layout="intrinsic" // Makes sure the image has an intrinsic size that doesn't force overflow
           />
           <div>
-            <p className="absolute bottom-20 left-4 text-6xl font-sans italic opacity-60 text-white font-bold z-30">
+            <p className="absolute top-24 right-20 text-6xl font-sans italic opacity-60 text-white font-bold z-30">
               karl
             </p>
-            <p className="absolute bottom-4 left-16 text-6xl font-sans opacity-90 text-white font-bold z-30">
+            <p className="absolute top-40 right-4 text-6xl font-sans opacity-90 text-white font-bold z-30">
               alexander
             </p>
           </div>
