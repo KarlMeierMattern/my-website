@@ -94,8 +94,28 @@ const resumeData = [
     category: "Experience",
     title: "Audit Assurance",
     description:
-      "Senior Associate with three years of experience spanning renewable energy, FinTech, FMCG, and manufacturing.",
+      "Senior Associate with three years of experience in renewable energy, FinTech, FMCG, and manufacturing.",
     details: "PwC | 2020.01 - 2022.12",
+  },
+  {
+    category: "Education",
+    title: "Post Graduate Diploma in Accounting",
+    description: "NQF Level 8 | GPA: 71%",
+    details: "UCT | 2018 - 2019",
+  },
+  {
+    category: "Education",
+    title: "Bachelor of Business Science Finance and Accounting",
+    description:
+      "NQF Level 7 | GPA: 75% | UCT Commerce Faculty scholarship | Dean's Merit List | Golden Key",
+    details: "UCT | 2015 - 2018",
+  },
+  {
+    category: "Education",
+    title: "IEB",
+    description:
+      "NQF Level 4 | GPA: 86% | Math (94%) | AP Math (84%) | Physics (85%) | Dramatic Arts (87%) | English (86%)",
+    details: "Clifton College | 2010-2014",
   },
   {
     category: "Certifications",
@@ -113,6 +133,13 @@ const resumeData = [
   },
   {
     category: "Certifications",
+    title: "Mathematics for Machine Learning and Data Science Specialisation",
+    description:
+      "Studied the fundamentals of machine learning mathematics, including calculus, linear algebra, statistics, and probability. Implemented optimisation algorithms like gradient descent from scratch. Learned advanced techniques like Newton’s method and the Hessian matrix. Applied Principal Component Analysis (PCA) for dimensionality reduction and feature extraction. Gained practical knowledge of these concepts to improve machine learning model performance.",
+    details: "DeepLearning.ai | 2025",
+  },
+  {
+    category: "Certifications",
     title: "AWS Cloud Fundamentals",
     description: "",
     details: "Amazon | 2024",
@@ -122,12 +149,6 @@ const resumeData = [
     title: "Azure AI Fundamentals",
     description: "",
     details: "Microsoft | 2024",
-  },
-  {
-    category: "Certifications",
-    title: "Mathematics for Machine Learning and Data Science Specialisation",
-    description: "",
-    details: "DeepLearning.ai | 2025",
   },
   {
     category: "Certifications",
