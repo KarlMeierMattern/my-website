@@ -99,7 +99,7 @@ const resumeData = [
   },
   {
     category: "Education",
-    title: "Post Graduate Diploma in Accounting",
+    title: "PGDA (Honours in Chartered Accounting)",
     description: "NQF Level 8 | GPA: 71%",
     details: "UCT | 2018 - 2019",
   },
