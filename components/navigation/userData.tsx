@@ -43,6 +43,13 @@ const profileInfo = [
 
 const portfolioData = [
   {
+    title: "South African Government Dashboard",
+    description:
+      "Developed a dashboard tool using a custom API scraper to visualise macroeconomic factors of the South African economy, including interest rates, GDP, unemployment, and exchange rates.",
+    src: govDash,
+    link: "https://sa-gov.vercel.app/",
+  },
+  {
     title: "Financial Growth Calculator",
     description:
       "Developed a React application that visualises the impact of compounded monthly investments. The app dynamically calculates and displays the final balance, total contributions, and earnings making it easier for users to plan and understand their financial growth over time.",
@@ -73,12 +80,6 @@ const portfolioData = [
     description:
       "Built a chatbot using LangChain and Retrieval-Augmented Generation (RAG) to assist in navigating course offerings across multiple faculties. The chatbot provides real-time responses about course details, prerequisites, and academic programs.",
     src: chatBot,
-  },
-  {
-    title: "South African Government Dashboard",
-    description:
-      "Developed a dashboard tool using a custom API scraper to visualise macroeconomic factors of the South African economy, including interest rates, GDP, unemployment, and exchange rates.",
-    src: govDash,
   },
 ];
 
