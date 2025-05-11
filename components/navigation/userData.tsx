@@ -5,6 +5,7 @@ import cgtTool from "../../app/public/images/projects/cgtTool.png";
 import chatBot from "../../app/public/images/projects/chatBot.png";
 import videoTranslation from "../../app/public/images/projects/videoTranslation.png";
 import govDash from "../../app/public/images/projects/govDash.png";
+import saTender from "../../app/public/images/projects/saTender.png";
 import book1 from "../../app/public/images/books/Book1.png";
 import book2 from "../../app/public/images/books/Book2.png";
 import book3 from "../../app/public/images/books/Book3.png";
@@ -48,6 +49,13 @@ const portfolioData = [
       "Developed a dashboard tool using a custom API scraper to visualise macroeconomic factors of the South African economy, including interest rates, GDP, unemployment, and exchange rates.",
     src: govDash,
     link: "https://sa-gov.vercel.app/",
+  },
+  {
+    title: "Tenders Dashboard",
+    description:
+      "Built a South African Government Tenders Database that aggregates and displays both active and awarded government tenders and allows users to browse, filter, and visualise tender data across categories, departments, provinces, and other criteria.",
+    src: saTender,
+    link: "https://sa-tender.vercel.app/",
   },
   {
     title: "Financial Growth Calculator",
