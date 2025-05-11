@@ -25,7 +25,7 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
       </head>
-      <body className={`${playfairDisplay.className} antialiased`}>
+      <body className={`${playfairDisplay.className} antialiased font-mono`}>
         {children}
         <Analytics />
       </body>

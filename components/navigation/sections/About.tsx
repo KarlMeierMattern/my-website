@@ -10,12 +10,11 @@ const About = () => {
       <div className="text-4xl lg:text-8xl italic pb-12">About</div>
       <div>
         <p className="text-lg lg:text-2xl pb-36 md:pb-12">
-          Aspiring software engineer with a passion for data science, ML, AI,
-          statistical analysis, and predictive modelling. With a foundation in
-          building software and a deep interest in solving complex problems, I
-          am driven by the challenge of blending both fields to build intuitive
-          web applications. While still building practical experience, I bring
-          strong technical skills and a data-driven approach to problem-solving.
+          I like to build things. I follow my curiosity and build things that I
+          think are interesting. I like to build things that help people.
+          I&apos;m a software engineer with a passion for understanding how
+          things work and making them better. I have a deep passion for taking
+          complex ideas and making them simple to understand.
         </p>
       </div>
       <div

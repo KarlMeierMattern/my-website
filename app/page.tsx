@@ -15,11 +15,9 @@ export default function Home() {
   return (
     <main className="bg-zinc-50">
       <section className="bg-zinc-300 relative w-full min-h-[100dvh] overflow-hidden">
-        {/* Adjusted section styles */}
         <div className="fixed top-4 left-0 right-0 w-screen flex justify-center z-20">
           <Navbar setSection={setSection} selectedSection={section} />
         </div>
-        {/* landscape image (visible on large screens only) */}
         <div className="relative w-full h-screen md:block hidden">
           <Image
             className="object-cover opacity-90 w-full h-full"
@@ -29,7 +27,6 @@ export default function Home() {
             priority // Optional: For performance optimization
           />
         </div>
-        {/* alsoMe image (visible on small screens only) */}
         <div className="md:hidden relative w-full h-screen flex-grow">
           <Image
             className="absolute bottom-0 left-0 z-20 opacity-80"
@@ -47,8 +44,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Content and Contact Section */}
       <section className="grid lg:grid-cols-[0.5fr_1fr_0.5fr]">
         <div className="col-start-2">
           <Content section={section} />
