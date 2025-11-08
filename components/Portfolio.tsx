@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./card";
 import React from "react";
 import Image from "next/image";
 import { portfolioData } from "./user-data";

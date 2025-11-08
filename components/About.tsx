@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./card";
 import React from "react";
 import { profileInfo } from "./user-data";
 
