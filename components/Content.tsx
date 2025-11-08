@@ -11,14 +11,11 @@ type ContentProps = {
 };
 
 export default function Content({ section }: ContentProps) {
-  // myRef is an object that has a single property called .current initially set to null
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const portfolioRef = useRef<HTMLDivElement | null>(null);
   const resumeRef = useRef<HTMLDivElement | null>(null);
   const libraryRef = useRef<HTMLDivElement | null>(null);
 
-  // .current holds a reference to the DOM element
-  // After the component mounts, myRef.current will point to the corresponding DOM element to which you’ve attached the ref
   useEffect(() => {
     const scrollToSection = () => {
       switch (section) {
@@ -44,9 +41,8 @@ export default function Content({ section }: ContentProps) {
     };
 
     scrollToSection();
-  }, [section]); // Only depend on section
+  }, [section]);
 
-  // each ref will point to the corresponding DOM element
   return (
     <div className="flex flex-col h-full w-full">
       <div ref={aboutRef}>
