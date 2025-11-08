@@ -1,6 +1,6 @@
-import Card from "@/components/Card";
+import Card from "./Card";
 import React from "react";
-import { profileInfo } from "@/components/userData";
+import { profileInfo } from "./userData";
 
 const About = () => {
   return (

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import About from "@/components/About";
-import Resume from "@/components/Resume";
-import Portfolio from "@/components/Portfolio";
-import Library from "@/components/Library";
+import About from "./About";
+import Resume from "./Resume";
+import Portfolio from "./Portfolio";
+import Library from "./Library";
 
 type ContentProps = {
   section: string;
