@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { bookList } from "./userData";
+import { bookList } from "./user-data";
 
 const Library = () => {
   return (

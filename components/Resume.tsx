@@ -1,4 +1,4 @@
-import { resumeData } from "./userData";
+import { resumeData } from "./user-data";
 
 type ResumeItem = {
   category: string;

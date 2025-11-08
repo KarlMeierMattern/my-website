@@ -1,6 +1,6 @@
 import Card from "./Card";
 import React from "react";
-import { profileInfo } from "./userData";
+import { profileInfo } from "./user-data";
 
 const About = () => {
   return (
