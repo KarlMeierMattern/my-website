@@ -1,10 +1,10 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
-import Content from "@/components/Content";
+import Navbar from "../components/Navbar";
+import Content from "../components/Content";
 import Image from "next/image";
 import { useState } from "react";
-import Contact from "@/components/Contact";
+import Contact from "../components/Contact";
 
 export default function Home() {
   const [section, setSection] = useState("");
