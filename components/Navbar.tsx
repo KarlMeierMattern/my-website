@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/components/navigation/Button";
+import Button from "@/components/Button";
 
 type NavbarProps = {
   setSection: (section: string) => void;

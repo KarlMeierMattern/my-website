@@ -1,7 +1,7 @@
-import Card from "../../Card";
+import Card from "@/components/Card";
 import React from "react";
 import Image from "next/image";
-import { portfolioData } from "@/components/navigation/userData";
+import { portfolioData } from "@/components/userData";
 
 export default function Portfolio() {
   return (

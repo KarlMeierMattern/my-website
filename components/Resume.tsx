@@ -1,4 +1,4 @@
-import { resumeData } from "@/components/navigation/userData";
+import { resumeData } from "@/components/userData";
 
 type ResumeItem = {
   category: string;

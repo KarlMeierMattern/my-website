@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { bookList } from "@/components/navigation/userData";
+import { bookList } from "@/components/userData";
 
 const Library = () => {
   return (
