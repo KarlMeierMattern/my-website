@@ -3,12 +3,9 @@
 import Navbar from "@/components/navigation/Navbar";
 import Content from "@/components/navigation/Content";
 import Image from "next/image";
-import landscape from "@/app/public/images/landscape.png";
-import alsoMe from "@/app/public/images/alsoMe.png";
 import { useState } from "react";
 import Contact from "@/components/navigation/sections/Contact";
 
-//home
 export default function Home() {
   const [section, setSection] = useState("");
 
@@ -21,18 +18,18 @@ export default function Home() {
         <div className="relative w-full h-screen md:block hidden">
           <Image
             className="object-cover opacity-90 w-full h-full"
-            src={landscape}
+            src="/images/landscape.png"
+            fill
             alt="Landscape picture"
-            layout="fill" // Image stays the same on large screens
             priority // Optional: For performance optimization
           />
         </div>
         <div className="md:hidden relative w-full h-screen flex-grow">
           <Image
             className="absolute bottom-0 left-0 z-20 opacity-80"
-            src={alsoMe}
+            src="/images/also-me.png"
+            fill
             alt="Alternate picture"
-            layout="intrinsic" // Makes sure the image has an intrinsic size that doesn't force overflow
           />
           <div>
             <p className="absolute top-24 right-20 text-6xl font-sans italic opacity-60 text-white font-bold z-30">
