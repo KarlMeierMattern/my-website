@@ -31,6 +31,8 @@ export function ProjectList({ projects }: ProjectListProps) {
                 name={project.name}
                 glyph={project.glyph}
                 tone={project.tone}
+                icon={project.icon}
+                url={project.url}
               />
               <span className="shrink-0 text-[15.5px] font-semibold text-ink sm:whitespace-nowrap">
                 {project.name}

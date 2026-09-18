@@ -6,6 +6,8 @@ export type Project = {
   year: string;
   glyph?: string;
   tone?: IconTone;
+  /** Local path under /public, or favicon auto-derived from url when omitted */
+  icon?: string;
   prefixYear?: boolean;
   bullets: string[];
   screenshots: string[];
@@ -22,7 +24,7 @@ export const projects: Project[] = [
     name: "sa census map",
     summary: "census data mapping",
     year: "2026",
-    glyph: "cm",
+    icon: "/images/icons/projects/sa-census-map.svg",
     tone: "ocean",
     bullets: [
       "Interactive map visualising South African census data across regions",
@@ -35,7 +37,7 @@ export const projects: Project[] = [
     name: "sa gov dashboard",
     summary: "visualising SA macro data",
     year: "2024",
-    glyph: "go",
+    icon: "/images/icons/projects/sa-gov.png",
     tone: "slate",
     bullets: [
       "Dashboard with a custom API scraper for South African macroeconomic indicators: interest rates, GDP, unemployment, and exchange rates",
@@ -48,7 +50,7 @@ export const projects: Project[] = [
     name: "tenders dashboard",
     summary: "SA gov tenders DB",
     year: "2024",
-    glyph: "td",
+    icon: "/images/icons/projects/sa-tender.png",
     tone: "sand",
     bullets: [
       "Searchable database of active and awarded government tenders with filters by category, department, and province",
@@ -61,7 +63,7 @@ export const projects: Project[] = [
     name: "financial growth calculator",
     summary: "compound investment calc",
     year: "2024",
-    glyph: "fc",
+    icon: "/images/icons/projects/future-calc.png",
     tone: "sage",
     bullets: [
       "Visualises compounded monthly investments with final balance, total contributions, and earnings over time",
@@ -74,7 +76,7 @@ export const projects: Project[] = [
     name: "cgt optimisation tool",
     summary: "CGT exclusion optimiser",
     year: "2024",
-    glyph: "tx",
+    icon: "/images/icons/projects/cgt-optimiser.png",
     tone: "clay",
     bullets: [
       "Optimises use of South Africa's annual capital gains tax exclusion by ranking shares by gain per transaction",
@@ -130,7 +132,7 @@ export const workEntries: Project[] = [
     name: "architecture & engineering",
     summary: "legacy modernisation, target-state design",
     year: "2026",
-    glyph: "ae",
+    icon: "/images/logos/pwc.svg",
     tone: "slate",
     bullets: [
       "CA(SA) and architecture & engineering consultant in PwC's Cloud & Digital practice, Cape Town",
@@ -145,7 +147,7 @@ export const workEntries: Project[] = [
     name: "m&a technology",
     summary: "PwC, IT due diligence",
     year: "2024",
-    glyph: "it",
+    icon: "/images/logos/pwc.svg",
     tone: "ocean",
     bullets: [
       "Manager — IT due diligence in M&A deals: infrastructure, apps, cybersecurity, governance, and post-deal integration",
@@ -158,7 +160,7 @@ export const workEntries: Project[] = [
     name: "m&a financial due diligence",
     summary: "PwC, buy & sell-side FDD",
     year: "2023",
-    glyph: "fd",
+    icon: "/images/logos/pwc.svg",
     tone: "sand",
     bullets: [
       "Manager — buy and sell-side financial due diligence for companies in the US and EMEA",
@@ -171,7 +173,7 @@ export const workEntries: Project[] = [
     name: "audit assurance",
     summary: "PwC, 2020 – 2022",
     year: "2020",
-    glyph: "aa",
+    icon: "/images/logos/pwc.svg",
     tone: "stone",
     bullets: [
       "Senior Associate (2022) — FinTech and renewable energy, including Mukuru Africa and Scatec Solar Africa",
@@ -187,7 +189,7 @@ export const backgroundEntries: Project[] = [
     name: "education",
     summary: "UCT Commerce",
     year: "2015",
-    glyph: "uc",
+    icon: "/images/logos/uct.png",
     tone: "sage",
     bullets: [
       "PGDA Honours in Chartered Accounting (71%), UCT, 2018 – 2019",
@@ -201,7 +203,7 @@ export const backgroundEntries: Project[] = [
     name: "certifications",
     summary: "AWS SAA, Azure AI Apps",
     year: "2026",
-    glyph: "ce",
+    icon: "/images/logos/aws.svg",
     tone: "clay",
     prefixYear: false,
     bullets: [
