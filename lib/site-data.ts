@@ -6,6 +6,7 @@ export type Project = {
   year: string;
   glyph?: string;
   tone?: IconTone;
+  prefixYear?: boolean;
   bullets: string[];
   screenshots: string[];
   url?: string;
@@ -199,6 +200,7 @@ export const backgroundEntries: Project[] = [
     year: "2026",
     glyph: "ce",
     tone: "clay",
+    prefixYear: false,
     bullets: [
       "AWS Certified Solutions Architect — Amazon, 2026",
       "Microsoft Certified: Azure AI Apps and Agents Developer Associate — Microsoft, 2026",

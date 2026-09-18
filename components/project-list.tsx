@@ -62,7 +62,9 @@ export function ProjectList({ projects }: ProjectListProps) {
                       >
                         <span className="mt-[0.55em] h-1 w-1 shrink-0 rounded-full bg-line-strong" />
                         <span>
-                          {bulletIndex === 0 && project.year
+                          {bulletIndex === 0 &&
+                          project.year &&
+                          project.prefixYear !== false
                             ? `${project.year} — ${bullet}`
                             : bullet}
                         </span>
