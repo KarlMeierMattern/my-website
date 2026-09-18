@@ -25,13 +25,13 @@ export function ProjectList({ projects }: ProjectListProps) {
               type="button"
               aria-expanded={isOpen}
               onClick={() => setOpenIndex(isOpen ? null : index)}
-              className="group flex w-full items-center gap-x-3 py-2.5 text-left"
+              className="group flex w-full min-w-0 items-center gap-x-3 py-2.5 text-left"
             >
               <ProjectIcon name={project.name} icon={project.icon} />
-              <span className="min-w-[8rem] shrink-0 basis-full text-[15.5px] font-semibold text-ink sm:basis-0 sm:whitespace-nowrap">
+              <span className="shrink-0 text-[15.5px] font-semibold text-ink sm:whitespace-nowrap">
                 {project.name}
               </span>
-              <span className="hidden flex-1 text-[15.5px] text-ink-muted sm:block">
+              <span className="hidden min-w-0 flex-1 truncate text-[15.5px] text-ink-muted sm:block">
                 {project.summary}
               </span>
               <ChevronDown
@@ -50,9 +50,6 @@ export function ProjectList({ projects }: ProjectListProps) {
             >
               <div className="overflow-hidden">
                 <div className="pb-4 pt-1 sm:pl-[calc(2.5rem+0.75rem)]">
-                  <p className="mb-3 text-[15.5px] text-ink-muted sm:hidden">
-                    {project.summary}
-                  </p>
                   <ul className="space-y-1.5">
                     {project.bullets.map((bullet, bulletIndex) => (
                       <li

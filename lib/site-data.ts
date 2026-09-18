@@ -15,12 +15,23 @@ export type ContactLink = {
 
 export const workProjects: Project[] = [
   {
+    name: "sa census map",
+    summary: "census data mapping",
+    year: "2026",
+    bullets: [
+      "Interactive map visualising South African census data across regions",
+      "Stack: React, Next.js, Vercel",
+    ],
+    screenshots: [],
+    url: "https://sa-census-map.vercel.app",
+  },
+  {
     name: "sa gov dashboard",
-    summary: "macroeconomic indicators for South Africa, live on Vercel",
+    summary: "live on Vercel",
     year: "2024",
     icon: "/images/projects/govDash.png",
     bullets: [
-      "Built a dashboard with a custom API scraper for interest rates, GDP, unemployment, and exchange rates",
+      "Dashboard with a custom API scraper for South African macroeconomic indicators: interest rates, GDP, unemployment, and exchange rates",
       "Stack: React, Next.js, Tailwind CSS, Vercel",
     ],
     screenshots: ["/images/projects/govDash.png"],
@@ -28,11 +39,11 @@ export const workProjects: Project[] = [
   },
   {
     name: "tenders dashboard",
-    summary: "searchable database of SA government tenders",
+    summary: "SA gov tenders DB",
     year: "2024",
     icon: "/images/projects/saTender.png",
     bullets: [
-      "Aggregates active and awarded government tenders with filters by category, department, and province",
+      "Searchable database of active and awarded government tenders with filters by category, department, and province",
       "Stack: React, Next.js, Tailwind CSS, Vercel",
     ],
     screenshots: ["/images/projects/saTender.png"],
@@ -40,11 +51,11 @@ export const workProjects: Project[] = [
   },
   {
     name: "financial growth calculator",
-    summary: "compound investment visualiser for monthly contributions",
+    summary: "compound investment calc",
     year: "2024",
     icon: "/images/projects/investCalc.png",
     bullets: [
-      "Calculates final balance, total contributions, and earnings over time",
+      "Visualises compounded monthly investments with final balance, total contributions, and earnings over time",
       "Stack: React, Tailwind CSS",
     ],
     screenshots: ["/images/projects/investCalc.png"],
@@ -52,11 +63,11 @@ export const workProjects: Project[] = [
   },
   {
     name: "cgt optimisation tool",
-    summary: "maximises use of South Africa's annual capital gains tax exclusion",
+    summary: "CGT exclusion optimiser",
     year: "2024",
     icon: "/images/projects/cgtTool.png",
     bullets: [
-      "Ranks shares by capital gain per transaction to maximise tax-free profit",
+      "Optimises use of South Africa's annual capital gains tax exclusion by ranking shares by gain per transaction",
       "Stack: React, Next.js, Vercel",
     ],
     screenshots: ["/images/projects/cgtTool.png"],
@@ -67,34 +78,34 @@ export const workProjects: Project[] = [
 export const exploringProjects: Project[] = [
   {
     name: "seasonal colour analysis",
-    summary: "TensorFlow computer vision for personalised styling recommendations",
+    summary: "TensorFlow + OpenAI",
     year: "2024",
     icon: "/images/projects/colourBot.png",
     bullets: [
-      "Detects facial landmarks and analyses colour data with TensorFlow",
-      "Integrated OpenAI API for styling recommendations based on facial features",
+      "Detects facial landmarks and analyses colour data with TensorFlow computer vision",
+      "Delivers personalised styling recommendations via OpenAI based on facial features",
       "Stack: Next.js, TensorFlow, OpenAI API",
     ],
     screenshots: ["/images/projects/colourBot.png"],
   },
   {
     name: "video translation bot",
-    summary: "Azure speech-to-text and translation for foreign-language videos",
+    summary: "Azure speech translation",
     year: "2024",
     icon: "/images/projects/videoTranslation.png",
     bullets: [
-      "Ingests and translates foreign-language videos into English",
+      "Ingests foreign-language videos and translates them to English using Azure Language Service speech-to-text",
       "Stack: Azure Language Service SDK, vanilla JS, Node.js",
     ],
     screenshots: ["/images/projects/videoTranslation.png"],
   },
   {
     name: "university course chatbot",
-    summary: "RAG chatbot for navigating course offerings across faculties",
+    summary: "LangChain RAG chatbot",
     year: "2024",
     icon: "/images/projects/chatBot.png",
     bullets: [
-      "Answers questions about course details, prerequisites, and academic programs",
+      "Helps students navigate course offerings across faculties with answers on details, prerequisites, and programs",
       "Stack: LangChain, RAG, Python",
     ],
     screenshots: ["/images/projects/chatBot.png"],
@@ -103,31 +114,58 @@ export const exploringProjects: Project[] = [
 
 export const backgroundEntries: Project[] = [
   {
-    name: "m&a transaction services",
-    summary: "CA(SA) manager at PwC, 2023 – present",
+    name: "architecture & engineering",
+    summary: "legacy modernisation, target-state design",
+    year: "2026",
+    bullets: [
+      "CA(SA) and architecture & engineering consultant in PwC's Cloud & Digital practice, Cape Town",
+      "Legacy modernisation, target-state design, and enterprise transformation",
+      "Evaluates application stacks, defines migration paths, and builds TCO models comparing current and future-state cost, risk, and scalability",
+      "Background in M&A technology due diligence and financial analysis, with hands-on work in solution architecture, modelling, and automation",
+      "Jul 2026 – present",
+    ],
+    screenshots: [],
+  },
+  {
+    name: "m&a technology",
+    summary: "PwC, IT due diligence",
+    year: "2024",
+    bullets: [
+      "Manager — IT due diligence in M&A deals: infrastructure, apps, cybersecurity, governance, and post-deal integration",
+      "May 2024 – Jul 2026",
+      "Tools: Azure AI Studio, Postman API, Python, Alteryx, Power BI",
+    ],
+    screenshots: [],
+  },
+  {
+    name: "m&a financial due diligence",
+    summary: "PwC, buy & sell-side FDD",
     year: "2023",
     bullets: [
-      "Financial analysis, tech due diligence, and data-driven decision-making for M&A engagements",
-      "Tools: Alteryx, Power BI, Python, Google Apps Script",
+      "Manager — buy and sell-side financial due diligence for companies in the US and EMEA",
+      "Jan 2023 – Apr 2024",
+      "Tools: financial modelling, Python, Alteryx",
     ],
     screenshots: [],
   },
   {
     name: "audit assurance",
-    summary: "Senior Associate at PwC, 2020 – 2022",
+    summary: "PwC, 2020 – 2022",
     year: "2020",
     bullets: [
-      "Three years across renewable energy, FinTech, FMCG, and manufacturing",
+      "Senior Associate (2022) — FinTech and renewable energy, including Mukuru Africa and Scatec Solar Africa",
+      "Associate (2020 – 2021) — audit assurance, Durban",
+      "CA(SA) qualified",
     ],
     screenshots: [],
   },
   {
     name: "education",
-    summary: "UCT Commerce — PGDA Honours (71%), BBusSc Finance & Accounting (75%)",
+    summary: "UCT Commerce",
     year: "2015",
     bullets: [
-      "PGDA Honours in Chartered Accounting, UCT, 2018 – 2019",
-      "Bachelor of Business Science Finance and Accounting, UCT, 2015 – 2018",
+      "PGDA Honours in Chartered Accounting (71%), UCT, 2018 – 2019",
+      "Bachelor of Business Science Finance and Accounting (75%), UCT, 2015 – 2018",
       "Dean's Merit List, Golden Key, Commerce Faculty scholarship",
       "IEB matric, Clifton College, 86% aggregate",
     ],
@@ -135,7 +173,7 @@ export const backgroundEntries: Project[] = [
   },
   {
     name: "certifications",
-    summary: "Azure AI Engineer, IBM ML, DeepLearning.ai specialisations",
+    summary: "Azure AI, IBM ML",
     year: "2023",
     bullets: [
       "Azure AI Engineer Associate — Microsoft, 2024",
@@ -151,6 +189,10 @@ export const contactLinks: ContactLink[] = [
   {
     label: "karlmeiermattern@gmail.com",
     href: "mailto:karlmeiermattern@gmail.com",
+  },
+  {
+    label: "github",
+    href: "https://github.com/KarlMeierMattern",
   },
   {
     label: "linkedin",

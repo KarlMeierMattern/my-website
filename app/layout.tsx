@@ -6,11 +6,11 @@ import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Karl Alexander",
-    default: "Karl Alexander",
+    template: "%s | karl-alexander",
+    default: "karl-alexander",
   },
   description:
-    "Portfolio of Karl Alexander — software engineer, data science, and M&A transaction services.",
+    "Portfolio of karl-alexander — software engineer, data science, and M&A transaction services.",
   metadataBase: new URL("https://my-website.vercel.app"),
 };
 
