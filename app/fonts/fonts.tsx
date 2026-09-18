@@ -1,8 +1,8 @@
-import { Playfair_Display } from "next/font/google";
+import { Instrument_Sans } from "next/font/google";
 
-export const playfairDisplay = Playfair_Display({
-  weight: ["400", "700", "900"],
-  style: ["normal", "italic"],
+export const instrumentSans = Instrument_Sans({
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-sans",
 });
