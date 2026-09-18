@@ -1,8 +1,11 @@
+export type IconTone = "stone" | "sage" | "sand" | "slate" | "clay" | "ocean";
+
 export type Project = {
   name: string;
   summary: string;
   year: string;
-  icon?: string;
+  glyph?: string;
+  tone?: IconTone;
   bullets: string[];
   screenshots: string[];
   url?: string;
@@ -18,6 +21,8 @@ export const workProjects: Project[] = [
     name: "sa census map",
     summary: "census data mapping",
     year: "2026",
+    glyph: "cm",
+    tone: "ocean",
     bullets: [
       "Interactive map visualising South African census data across regions",
       "Stack: React, Next.js, Vercel",
@@ -29,7 +34,8 @@ export const workProjects: Project[] = [
     name: "sa gov dashboard",
     summary: "live on Vercel",
     year: "2024",
-    icon: "/images/projects/govDash.png",
+    glyph: "go",
+    tone: "slate",
     bullets: [
       "Dashboard with a custom API scraper for South African macroeconomic indicators: interest rates, GDP, unemployment, and exchange rates",
       "Stack: React, Next.js, Tailwind CSS, Vercel",
@@ -41,7 +47,8 @@ export const workProjects: Project[] = [
     name: "tenders dashboard",
     summary: "SA gov tenders DB",
     year: "2024",
-    icon: "/images/projects/saTender.png",
+    glyph: "td",
+    tone: "sand",
     bullets: [
       "Searchable database of active and awarded government tenders with filters by category, department, and province",
       "Stack: React, Next.js, Tailwind CSS, Vercel",
@@ -53,7 +60,8 @@ export const workProjects: Project[] = [
     name: "financial growth calculator",
     summary: "compound investment calc",
     year: "2024",
-    icon: "/images/projects/investCalc.png",
+    glyph: "fc",
+    tone: "sage",
     bullets: [
       "Visualises compounded monthly investments with final balance, total contributions, and earnings over time",
       "Stack: React, Tailwind CSS",
@@ -65,7 +73,8 @@ export const workProjects: Project[] = [
     name: "cgt optimisation tool",
     summary: "CGT exclusion optimiser",
     year: "2024",
-    icon: "/images/projects/cgtTool.png",
+    glyph: "tx",
+    tone: "clay",
     bullets: [
       "Optimises use of South Africa's annual capital gains tax exclusion by ranking shares by gain per transaction",
       "Stack: React, Next.js, Vercel",
@@ -80,7 +89,8 @@ export const exploringProjects: Project[] = [
     name: "seasonal colour analysis",
     summary: "TensorFlow + OpenAI",
     year: "2024",
-    icon: "/images/projects/colourBot.png",
+    glyph: "co",
+    tone: "stone",
     bullets: [
       "Detects facial landmarks and analyses colour data with TensorFlow computer vision",
       "Delivers personalised styling recommendations via OpenAI based on facial features",
@@ -92,7 +102,8 @@ export const exploringProjects: Project[] = [
     name: "video translation bot",
     summary: "Azure speech translation",
     year: "2024",
-    icon: "/images/projects/videoTranslation.png",
+    glyph: "vt",
+    tone: "ocean",
     bullets: [
       "Ingests foreign-language videos and translates them to English using Azure Language Service speech-to-text",
       "Stack: Azure Language Service SDK, vanilla JS, Node.js",
@@ -103,7 +114,8 @@ export const exploringProjects: Project[] = [
     name: "university course chatbot",
     summary: "LangChain RAG chatbot",
     year: "2024",
-    icon: "/images/projects/chatBot.png",
+    glyph: "ed",
+    tone: "slate",
     bullets: [
       "Helps students navigate course offerings across faculties with answers on details, prerequisites, and programs",
       "Stack: LangChain, RAG, Python",
@@ -117,6 +129,8 @@ export const backgroundEntries: Project[] = [
     name: "architecture & engineering",
     summary: "legacy modernisation, target-state design",
     year: "2026",
+    glyph: "ae",
+    tone: "slate",
     bullets: [
       "CA(SA) and architecture & engineering consultant in PwC's Cloud & Digital practice, Cape Town",
       "Legacy modernisation, target-state design, and enterprise transformation",
@@ -130,6 +144,8 @@ export const backgroundEntries: Project[] = [
     name: "m&a technology",
     summary: "PwC, IT due diligence",
     year: "2024",
+    glyph: "it",
+    tone: "ocean",
     bullets: [
       "Manager — IT due diligence in M&A deals: infrastructure, apps, cybersecurity, governance, and post-deal integration",
       "May 2024 – Jul 2026",
@@ -141,6 +157,8 @@ export const backgroundEntries: Project[] = [
     name: "m&a financial due diligence",
     summary: "PwC, buy & sell-side FDD",
     year: "2023",
+    glyph: "fd",
+    tone: "sand",
     bullets: [
       "Manager — buy and sell-side financial due diligence for companies in the US and EMEA",
       "Jan 2023 – Apr 2024",
@@ -152,6 +170,8 @@ export const backgroundEntries: Project[] = [
     name: "audit assurance",
     summary: "PwC, 2020 – 2022",
     year: "2020",
+    glyph: "aa",
+    tone: "stone",
     bullets: [
       "Senior Associate (2022) — FinTech and renewable energy, including Mukuru Africa and Scatec Solar Africa",
       "Associate (2020 – 2021) — audit assurance, Durban",
@@ -163,6 +183,8 @@ export const backgroundEntries: Project[] = [
     name: "education",
     summary: "UCT Commerce",
     year: "2015",
+    glyph: "uc",
+    tone: "sage",
     bullets: [
       "PGDA Honours in Chartered Accounting (71%), UCT, 2018 – 2019",
       "Bachelor of Business Science Finance and Accounting (75%), UCT, 2015 – 2018",
@@ -173,13 +195,19 @@ export const backgroundEntries: Project[] = [
   },
   {
     name: "certifications",
-    summary: "Azure AI, IBM ML",
-    year: "2023",
+    summary: "AWS SAA, Azure AI Apps",
+    year: "2026",
+    glyph: "ce",
+    tone: "clay",
     bullets: [
-      "Azure AI Engineer Associate — Microsoft, 2024",
-      "Machine Learning Specialisation — IBM, 2023",
+      "AWS Certified Solutions Architect — Amazon, 2026",
+      "Microsoft Certified: Azure AI Apps and Agents Developer Associate — Microsoft, 2026",
+      "Building with the Claude API — Anthropic, 2026",
+      "Cyber Security 101 Certificate — 2025",
       "Mathematics for ML and Data Science — DeepLearning.ai, 2025",
+      "Azure AI Engineer Associate — Microsoft, 2024",
       "AWS Cloud Fundamentals — Amazon, 2024",
+      "Machine Learning Specialisation — IBM, 2023",
     ],
     screenshots: [],
   },

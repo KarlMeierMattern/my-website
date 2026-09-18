@@ -15,7 +15,7 @@ export function ProjectList({ projects }: ProjectListProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <ul className="divide-y divide-line">
+    <ul>
       {projects.map((project, index) => {
         const isOpen = openIndex === index;
 
@@ -27,7 +27,11 @@ export function ProjectList({ projects }: ProjectListProps) {
               onClick={() => setOpenIndex(isOpen ? null : index)}
               className="group flex w-full min-w-0 items-center gap-x-3 py-2.5 text-left"
             >
-              <ProjectIcon name={project.name} icon={project.icon} />
+              <ProjectIcon
+                name={project.name}
+                glyph={project.glyph}
+                tone={project.tone}
+              />
               <span className="shrink-0 text-[15.5px] font-semibold text-ink sm:whitespace-nowrap">
                 {project.name}
               </span>
