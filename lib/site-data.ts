@@ -17,7 +17,7 @@ export type ContactLink = {
   href: string;
 };
 
-export const workProjects: Project[] = [
+export const projects: Project[] = [
   {
     name: "sa census map",
     summary: "census data mapping",
@@ -33,7 +33,7 @@ export const workProjects: Project[] = [
   },
   {
     name: "sa gov dashboard",
-    summary: "live on Vercel",
+    summary: "visualising SA macro data",
     year: "2024",
     glyph: "go",
     tone: "slate",
@@ -125,7 +125,7 @@ export const exploringProjects: Project[] = [
   },
 ];
 
-export const backgroundEntries: Project[] = [
+export const workEntries: Project[] = [
   {
     name: "architecture & engineering",
     summary: "legacy modernisation, target-state design",
@@ -180,6 +180,9 @@ export const backgroundEntries: Project[] = [
     ],
     screenshots: [],
   },
+];
+
+export const backgroundEntries: Project[] = [
   {
     name: "education",
     summary: "UCT Commerce",
