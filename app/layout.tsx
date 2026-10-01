@@ -3,7 +3,6 @@ import "./globals.css";
 import { instrumentSans } from "./fonts/fonts";
 import { Analytics } from "@vercel/analytics/react";
 import { cn } from "@/lib/utils";
-import { SmileyRingWidget } from "@/components/smiley-ring-widget";
 
 export const metadata: Metadata = {
   title: {
@@ -30,7 +29,6 @@ export default function RootLayout({
       </head>
       <body className={cn(instrumentSans.className, "antialiased")}>
         {children}
-        <SmileyRingWidget />
         <Analytics />
       </body>
     </html>
