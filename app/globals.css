@@ -116,6 +116,11 @@
     animation: smiley-eye-in 300ms ease-out 120ms forwards;
   }
 
+  .smiley-ring-mouth {
+    opacity: 0;
+    animation: smiley-mouth-in 300ms ease-out 350ms forwards;
+  }
+
   .smiley-ring-static .smiley-ring-stroke,
   .smiley-ring-static .smiley-ring-label,
   .smiley-ring-static .smiley-ring-eye,
